@@ -1,0 +1,6 @@
+UnBundle 'tpope/vim-surround'
+Bundle 'ervandew/supertab'
+Bundle 'rstacruz/vim-ultisnips-css'
+Bundle 'mattn/emmet-vim'
+Bundle 'maksimr/vim-jsbeautify'
+Bundle 'marijnh/tern_for_vim'

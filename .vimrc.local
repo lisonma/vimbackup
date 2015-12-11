@@ -1,0 +1,208 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                   Scheme                                   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" scheme: ir_black, molokai, peaksea, solarized
+colorscheme solarized
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_contrast="normal"
+let g:solarized_visibility="high"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                          tern_for_vim_conf                          "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:tern_show_signature_in_pum = 1
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                 Systastic                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_c_checkers = ['gcc']
+let g:syntastic_c_compiler = 'gcc'
+let g:syntastic_c_compiler_options = ' -std=c99'
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                   tagbar                                   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:tagbar_width = 20
+let g:tagbar_autofocus = 1
+let g:tagbar_autoclose = 1
+nmap b :TagbarToggle<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                  NERDTree                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" au VimEnter * NERDTree
+set mouse=nv
+let g:NERDTreeWinSize=20
+map t :NERDTree<cr>
+" let NERDTreeQuitOnOpen=0
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                               YouCompleteme                                "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 转到定义位置
+map ,g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+let g:ycm_min_num_of_chars_for_completion=1
+let g:ycm_min_num_identifier_candidate_chars=0
+let g:ycm_complete_in_comments=1
+let g:ycm_collect_identifiers_from_comments_and_strings=1
+let g:ycm_key_list_select_completion=['<Down>']
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                 UltiSnips                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsEditSplit="vertical"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                  supertab                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:SuperTabDefaultCompletionType="<c-x><c-o>"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                   CtrlP                                    "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map ,ff :CtrlPMRU<cr>
+let g:ctrlp_map='<Leader>f'
+let g:ctrlp_open_multiple_files = 'v'
+let g:ctrlp_open_new_file = 'v'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                  VimFold                                   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set foldenable
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                 SimpylFold                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:SimpylFold_docstring_preview=1
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                             VimCoplete & Spell                             "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set dictionary+=/usr/share/dict/words
+map ,ss :setlocal spell!<cr>
+set complete-=k complete+=k
+set dictionary+=~/data/github/dotfiles/vim/dictionary/javascript.dict
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                      VimMultifiles & buffer & window                       "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 缓冲区切换
+map <s-tab> :bp<cr>
+map <tab> :bn<cr>
+map e :bd<cr>
+map s :! zsh<cr>
+" 窗口切换
+map ; <c-w><c-w>
+map q :noh<cr>
+" 设置行号
+map <Leader>r :set nu<cr>
+" 恢复行号
+map r :set nonu<cr>
+map f :qa!<cr>
+map w :w!<cr>
+map <F3> <c-]>
+map m <c-o>
+imap jj <esc>
+imap hh <esc>la
+imap ww <c-x><c-k>
+" 快捷
+imap aa ()<esc>i
+imap ss []<esc>i
+imap dd {}<esc>i
+imap ff ''<esc>i
+imap gg ""<esc>i
+imap yy <><esc>i
+imap uu $
+imap ii !
+imap oo @
+imap pp %
+imap ;; &
+imap nn +
+imap mm -
+imap ,, *
+imap .. _
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                  Airline                                   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2
+let g:airline_theme='dark'
+let g:NERDSpaceDelims=1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:acp_enableAtStartup = 0
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+set hidden
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                   ctags                                    "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+let g:tagbar_ctags_bin = "/usr/local/bin/ctags"
+set tags+=/usr/local/include/boost
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                indentGuides                                "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#212121 ctermbg=233
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#404040 ctermbg=234
+:nmap <silent> <F4> <Plug>IndentGuidesToggle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                vim-markdown                                "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_markdown_math = 1
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                               vim-jsbeautify                               "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
+autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                 emmet-vim                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+imap cc <c-y>,
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                 Normalset                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set guifont=Monaco\ for\ Powerline:h16
+set nonu
+set gdefault
+:set pastetoggle=<F2>
+nmap lb 9
+nmap le 0
+set nowrap        " 禁止折行
+set smartindent   " 智能对齐
+set autoindent    " 自动对齐
+set expandtab     " 拓展為空格
+set tabstop=4     " Tab键的宽度
+set softtabstop=4
+set shiftwidth=4  " 统一缩进为4
+set smarttab
+set shiftround    " 缩进时取整
+set completeopt=longest,menu
+set nobackup
+set nowritebackup
+set smartcase
+set ignorecase
+set autoread
+" ,ch  列高亮
+map ,ch :call SetColorColumn()<CR>
+function! SetColorColumn()
+  let col_num = virtcol(".")
+  let cc_list = split(&cc,',')
+  if count(cc_list, string(col_num)) <= 0
+    execute "set cc+=".col_num
+  else
+    execute "set cc-=".col_num
+  endif
+endfunction
+" 换行不再显示注释字符
+au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
