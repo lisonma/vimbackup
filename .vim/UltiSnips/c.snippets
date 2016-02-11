@@ -1,0 +1,19 @@
+snippet co "comment for c" b
+/**
+ * ${1:description}
+ */
+${0}
+endsnippet
+snippet optional "optional variable" b
+	va_list args;
+	va_start(args, ${1:para1});
+	// TODO
+	${2:type} value = va_arg(args, ${3:type});
+	va_end(args);
+endsnippet
+snippet vp "vprintf(const char* format, va_list args)" b
+	vprintf(format, args);
+endsnippet
+snippet exit "EXIT_SUCCESS" b
+EXIT_SUCCESS
+endsnippet

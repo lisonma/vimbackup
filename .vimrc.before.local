@@ -29,4 +29,4 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                BundleGroups                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:spf13_bundle_groups=['general','writing','programming','youcompleteme','javascript','html','misc']
+let g:spf13_bundle_groups=['general','writing','programming','youcompleteme','javascript','html','misc','python']
