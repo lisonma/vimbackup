@@ -13,12 +13,12 @@ inoremap <buffer> <silent> " =AutoPairsInsert('"')
 inoremap <buffer> <silent> ' =AutoPairsInsert('''')
 inoremap <buffer> <silent> ( =AutoPairsInsert('(')
 inoremap <buffer> <silent> ) =AutoPairsInsert(')')
-onoremap <buffer> <silent> ð :call AutoPairsToggle()
-xnoremap <buffer> <silent> ð :call AutoPairsToggle()
-nnoremap <buffer> <silent> ð :call AutoPairsToggle()
-onoremap <buffer> <silent> î :call AutoPairsJump()
-xnoremap <buffer> <silent> î :call AutoPairsJump()
 nnoremap <buffer> <silent> î :call AutoPairsJump()
+xnoremap <buffer> <silent> î :call AutoPairsJump()
+onoremap <buffer> <silent> î :call AutoPairsJump()
+nnoremap <buffer> <silent> ð :call AutoPairsToggle()
+xnoremap <buffer> <silent> ð :call AutoPairsToggle()
+onoremap <buffer> <silent> ð :call AutoPairsToggle()
 snoremap <buffer> <silent> î :call AutoPairsJump()
 snoremap <buffer> <silent> ð :call AutoPairsToggle()
 inoremap <buffer> <silent> [ =AutoPairsInsert('[')
@@ -136,11 +136,11 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 568 - ((25 * winheight(0) + 16) / 32)
+let s:l = 409 - ((3 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-568
+409
 normal! 05|
 lcd ~/
 let &so = s:so_save | let &siso = s:siso_save

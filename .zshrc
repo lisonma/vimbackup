@@ -32,6 +32,10 @@ deleteSpotlight() {
     sudo mv Search.bundle Search2.bundle
     killall SystemUIServer
 }
+new front-end-proj() {
+    cd ~/
+    cp -R ~/front_end_proj_template/project .
+}
 function net { python /Applications/STunGUI.app/Contents/Resources/Fish88Check.py }
 #######################################################################
 #                                Alias                                #
@@ -40,6 +44,10 @@ alias compilecpp='g++  -g -Wall -Werror -Wformat -std=c++11 -stdlib=libc++  -o r
 alias compilec='gcc -g -Wall -Werror -Wformat -std=c99 -o result'
 alias c='cd'
 alias mk='mkdir'
+alias t='tree -C'
+alias ta='tree -a -C'
+alias td='tree -d -C'
+alias tl='tree -C -L'
 # alias vd = 'vimdiff'
 alias sl='clear'
 alias la='ls -a'
@@ -62,9 +70,9 @@ alias o='open'
 #######################################################################
 export aria2c=/usr/local/etc/bash_completion.d/aria2c
 export ZSH=$HOME/.oh-my-zsh
-export ATJ="/usr/local/Cellar/autojump/22.2.4/etc/profile.d"
+export ATJ="/usr/local/Cellar/autojump/22.3.0/etc/profile.d"
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
-plugins=(git colored-man virtualenv pip brew osx  autojump  web-search last-working-dir catimg encode64)
+plugins=(git colored-man virtualenv brew osx autojump web-search last-working-dir gem npm)
 source $ZSH/oh-my-zsh.sh
 source $ATJ/autojump.sh
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh

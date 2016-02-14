@@ -1,6 +1,6 @@
-UnBundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 Bundle 'rstacruz/vim-ultisnips-css'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'posva/vim-vue'
 Bundle 'ternjs/tern_for_vim'
+UnBundle 'terryma/vim-multiple-cursors'

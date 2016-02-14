@@ -36,7 +36,7 @@ autocmd WinLeave * lclose
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   tagbar                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:tagbar_width = 25
+let g:tagbar_width = 30
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 nmap b :TagbarToggle<CR>
@@ -46,7 +46,7 @@ nmap b :TagbarToggle<CR>
 " au VimEnter * NERDTree
 set mouse=a "nv
 set mousehide
-let g:NERDTreeWinSize=25
+let g:NERDTreeWinSize=30
 map t :NERDTree<cr>
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowBookmarks=1
@@ -67,6 +67,8 @@ let g:ycm_min_num_identifier_candidate_chars=0
 let g:ycm_complete_in_comments=1
 let g:ycm_collect_identifiers_from_comments_and_strings=1
 let g:ycm_key_list_select_completion=['<Down>']
+let g:ycm_filetype_blacklist={}
+let g:ycm_autoclose_preview_window_after_completion = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 UltiSnips                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -77,7 +79,7 @@ let g:UltiSnipsEditSplit="vertical"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  supertab                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SuperTabDefaultCompletionType="<c-x><c-o>"
+let g:SuperTabDefaultCompletionType="context"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   CtrlP                                    "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -181,9 +183,17 @@ autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 imap cc <c-y>,
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                       multiple-cursor config                               "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:multi_cursor_start_key='<F6>'
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 Normalset                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set guifont=Monaco\ for\ Powerline:h17
+" set guifont=Monaco\ for\ Powerline:h17
 set nonu
 set gdefault
 :set pastetoggle=<F2>
@@ -192,10 +202,15 @@ nmap le 0
 set nowrap        " 禁止折行
 set smartindent   " 智能对齐
 set autoindent    " 自动对齐
-set expandtab     " 拓展為空格
 set tabstop=4     " Tab键的宽度
-set softtabstop=4
 set shiftwidth=4  " 统一缩进为4
+set softtabstop=4
+set expandtab     " 拓展為空格
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype scss setlocal ts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
+autocmd Filetype c setlocal ts=4 sw=4 sts=0 noexpandtab
 set smarttab
 set shiftround    " 缩进时取整
 set completeopt=longest,menu
@@ -241,13 +256,13 @@ set scrolloff=3
 set nojoinspaces
 set number
 " 自动补全tab触发
-function! InsertTabWrapper()
-	let col = col('.') - 1
-	if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-	else
-        return "\<c-p>"
-	endif
-endfunction
-inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <S-Tab> <c-n>
+" function! InsertTabWrapper()
+	" let col = col('.') - 1
+	" if !col || getline('.')[col - 1] !~ '\k'
+        " return "\<tab>"
+	" else
+        " return "\<c-p>"
+	" endif
+" endfunction
+" inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
+" inoremap <S-Tab> <c-n>
