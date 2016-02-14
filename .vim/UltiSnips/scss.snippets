@@ -1,0 +1,41 @@
+snippet chsl "color: hsl color module" b
+color: hsl(${1:100%}, ${2:100%},${3:100%});${0}
+endsnippet
+snippet ret "@return" b
+@return ${1:value-or-mix};${0}
+endsnippet
+snippet ac "@access public" b
+/// @access public${0}
+endsnippet
+snippet param "@param {type}" b
+/// @param {${1:type}} $${2:param-name} - ${0:functional description}
+endsnippet
+snippet author "@author" b
+/// @author ${1:MaLiSheng}
+endsnippet
+snippet example "@example" b
+/// @example scss - Usage
+///   ${1:selector} {
+///     @include ${2:mixin}(${3:param});
+///   }
+/// @example css - CSS output
+///   ${1:selector} {
+///     ${0}
+///   }
+endsnippet
+snippet requ "@requires" b
+/// @requires $${1:varialbles-name}
+endsnippet
+snippet med "@media" b
+@media #{$${1:query}} {
+  @content;
+}
+endsnippet
+snippet el "@else" b
+@else {
+  ${0}
+}
+endsnippet
+snippet er "@error" b
+@error '${0:error content}';
+endsnippet

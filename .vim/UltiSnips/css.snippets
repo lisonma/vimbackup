@@ -1,0 +1,33 @@
+snippet med "media" b
+@media screen and (${1:min}-width: ${2:600px}) {
+	${0}
+}
+endsnippet
+snippet jc "justify-content" b
+justify-content: ${1:center|space-around};
+endsnippet
+snippet ai "align-items" b
+align-items: ${1:center};
+endsnippet
+snippet fg "flex-grow" b
+flex-grow: ${1:auto|0};
+endsnippet
+snippet flex "flex: 0 1 auto" b
+flex: ${1:0} ${2:1} ${3:auto};
+endsnippet
+snippet fs "flex-shrink" b
+flex-shrink: ${1:1};
+endsnippet
+snippet fb "flex-basis" b
+flex-basis: ${1:auto};
+endsnippet
+snippet co "Description" b
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............${1:You’re reading it!}
+ * RESET...............${2:Set our reset defaults}
+ * FONT-FACE...........${3:Import brand font files}
+ */
+endsnippet
