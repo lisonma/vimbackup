@@ -134,12 +134,12 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 40 - ((25 * winheight(0) + 17) / 34)
+let s:l = 191 - ((32 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-40
-normal! 028|
+191
+normal! 0
 lcd ~/.vim/UltiSnips
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

@@ -41,7 +41,7 @@ setlocal colorcolumn=
 setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
 setlocal commentstring=/*%s*/
 setlocal complete=.,w,b,u,t,i,k
-setlocal concealcursor=i
+setlocal concealcursor=inc
 setlocal conceallevel=2
 setlocal completefunc=youcompleteme#Complete
 setlocal nocopyindent
@@ -132,12 +132,12 @@ setlocal wrap
 setlocal wrapmargin=0
 9
 normal! zo
-let s:l = 13 - ((8 * winheight(0) + 10) / 21)
+let s:l = 1 - ((0 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-13
-normal! 020|
+1
+normal! 014|
 lcd ~/code
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

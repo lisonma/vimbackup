@@ -4,10 +4,15 @@ let s:cpo_save=&cpo
 set cpo&vim
 inoremap <buffer> <silent> <BS> =AutoPairsDelete()
 noremap <buffer>  :call JsBeautify()
+nmap <buffer> gf <Plug>NodeTabGotoFile
+nmap <buffer>  <Plug>NodeSplitGotoFile
+nmap <buffer> f <Plug>NodeSplitGotoFile
 inoremap <buffer> <silent> å =AutoPairsFastWrap()
 inoremap <buffer> <silent> â =AutoPairsBackInsert()
 inoremap <buffer> <silent> <expr> ð AutoPairsToggle()
 inoremap <buffer> <silent> î :call AutoPairsJump()a
+nmap <buffer> gf <Plug>NodeGotoFile
+nnoremap <buffer> <silent> <Plug>(jsdoc) :call jsdoc#insert()
 inoremap <buffer> <silent>  =AutoPairsDelete()
 inoremap <buffer> <silent>   =AutoPairsSpace()
 inoremap <buffer> <silent> " =AutoPairsInsert('"')
@@ -42,7 +47,7 @@ setlocal colorcolumn=
 setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
 setlocal commentstring=//%s
 setlocal complete=.,w,b,u,t,i,k
-setlocal concealcursor=i
+setlocal concealcursor=inc
 setlocal conceallevel=2
 setlocal completefunc=youcompleteme#Complete
 setlocal nocopyindent
@@ -93,7 +98,7 @@ setlocal matchpairs=(:),{:},[:]
 setlocal modeline
 setlocal modifiable
 setlocal nrformats=bin,octal,hex
-setlocal nonumber
+setlocal number
 setlocal numberwidth=4
 setlocal omnifunc=tern#Complete
 setlocal path=
@@ -113,7 +118,7 @@ setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
-setlocal statusline=%!airline#statusline(2)
+setlocal statusline=%!airline#statusline(1)
 setlocal suffixesadd=.js
 setlocal swapfile
 setlocal synmaxcol=3000
@@ -131,12 +136,12 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 1 - ((0 * winheight(0) + 15) / 30)
+let s:l = 149 - ((21 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+149
+normal! 011|
 lcd ~/Downloads/Project\ Template\ 1/js
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

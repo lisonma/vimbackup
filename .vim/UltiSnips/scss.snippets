@@ -5,7 +5,7 @@ snippet ret "@return" b
 @return ${1:value-or-mix};${0}
 endsnippet
 snippet ac "@access public" b
-/// @access public${0}
+/// @access ${0:public | private}
 endsnippet
 snippet param "@param {type}" b
 /// @param {${1:type}} $${2:param-name} - ${0:functional description}
@@ -38,4 +38,155 @@ snippet el "@else" b
 endsnippet
 snippet er "@error" b
 @error '${0:error content}';
+endsnippet
+snippet sco "create a new scope" b
+.${1:new-scope-name}::before {
+  ${2:// print value --> content: $variable-name}
+}
+endsnippet
+snippet type "@type" b
+/// @type ${1:type-of-variable}
+endsnippet
+snippet prop "@prop" b
+/// @prop {${1:type-of-key|type-of-value}} ${2:key|value} - ${0:discription}
+endsnippet
+snippet re "@return" b
+/// @return {${1:type-of-returned-value}}
+endsnippet
+snippet func "define a function" b
+@function ${1:func-name}($${2:param}) {
+  @return ${0:fun-or-values};
+}
+endsnippet
+snippet fu "invoke a function" b
+${1:func-name}($${2:params...});${0}
+endsnippet
+snippet an "animation" b
+animation: ${1:animation-name} ${2:duration:0s} ${3:timing-func:ease|ease-in|linear} ${4:delay:0s} ${5:iteration-count:infinite|number} ${6:direction:normal|reverse|alternate|alternate-reverse} ${7:fill-mode:none|forwards|backwords|both} ${8:play-state:running|paused};
+endsnippet
+snippet @k "@keyframes" b
+@keyframes ${1:animation-name} {
+  0% {
+		${2:property}: ${3:value};
+  }
+  ${0}
+  100% {
+		${4:property}: ${5:value};
+  }
+}
+endsnippet
+snippet %% "time selector" b
+${1:time-percentage}% {
+  ${2:property}: ${3:value};
+  ${0}
+}
+endsnippet
+snippet mixin:clear "clearfix" b
+/// Helper to clear inner floats
+/// @author MaLiSheng
+/// @link http://${1:example.com}
+@mixin flearfix {
+	&::after {
+	  content: '';
+	  display: table;
+	  clear: both;
+	}
+} ${0}
+endsnippet
+snippet link "@link" b
+@link http://example.com
+endsnippet
+snippet mixin:size "helper to size an element" b
+/// helper to size an element
+/// @author MaLiSheng
+/// @link http://${1:example.com}
+/// @param {Length} $width
+/// @param {Length} $height
+@mixin size($width, $height){
+  width: $width;
+  height: $height;
+} ${0}
+endsnippet
+snippet br "border-radius" b
+-moz-border-radius: ${1:num}px;
+-webkit-border-radius: ${2:num}px;
+-o-border-radius: ${3:num}px;
+endsnippet
+snippet mixin:pre "@mixin prefix" b
+@mixin prefix($property, $value, $prefixes: ()){
+	@each $prefix in $prefixes {
+		-#{prefix}-#{property}: $value;
+	}
+
+	#{property}: $value;
+}
+endsnippet
+snippet mixin:px2em "translate px to em" b
+@function px2em($px, $base-font-size: $mq-base-font-size){
+	@if unitless($px){
+	  @warn 'Assuming #{$px} to be in pixels, attempting to convert it into pixels.';
+	  @return px2em($px + 0px);
+	} @else if unit($px) == em {
+	  @return $px;
+	}
+
+	@return ($px / $base-font-size) * 1em;
+}
+endsnippet
+snippet font "@font-face define a name for font" b
+font-family: '${1:FontAwesome}';
+src: url('${2:fonts/fontawesome-webfont.woff}')
+endsnippet
+snippet cr "column-rule" b
+-webkit-column-rule: ${1:column-rule-width}px ${2:column-rule-style:outset...} ${3:column-rule-color};
+-moz-column-rule: ${1:column-rule-width}px ${2:column-rule-style:outset...} ${3:column-rule-color};
+column-rule: ${1:column-rule-width}px ${2:column-rule-style:outset...} ${3:column-rule-color};
+endsnippet
+snippet res "resize" b
+resize: ${1:both|horizontal|vertical};
+overflow: auto; ${0}
+endsnippet
+snippet outline "outline&outline-offset" b
+outline: ${1:width}px ${2:style:solid...} ${3:color};
+outline-offset: ${4:width}px;
+endsnippet
+snippet trans "transition" b
+transition-property: ${1:all...};
+transition-duration: ${2:1s};
+transition-timing-function: ${3:ease|ease-in|ease-in-out|ease-out|step-start|step-end|ease,linear|cubic-bezier(1.000,0.835,0.000,0.945)};
+transition-delay: ${4:0};
+endsnippet
+snippet prefix "Description" b
+-o-${1:property}: ${2:value};
+-moz-${3:$1}: ${4:$2};
+-webkit-${5:$1}: ${6:$2};
+-ms-${7:$1}: ${8:$2};
+${9:$1}: ${10:$2};
+${0}
+endsnippet
+snippet cb "cubic-bezier" b
+cubic-bezier(${1:0.000}, ${2:0.000}, ${3:0.000}, ${4:1.000});
+endsnippet
+snippet mixin:transition "@mixin transition" b
+@mixin transition($property, $duration, $timing-func) {
+  -o-transition: #{$property} #{$duration} #{$timing-func};
+  -moz-transition: #{$property} #{$duration} #{$timing-func};
+  -webkit-transition: #{$property} #{$duration} #{$timing-func};
+  -ms-transition: #{$property} #{$duration} #{$timing-func};
+  transition: #{$property} #{$duration} #{$timing-func};
+} ${0}
+endsnippet
+snippet transform:2d "transform 2d" b
+-webkit-transform: ${1:translate(xpx, ypx)|rotate(360deg)|scale(x,y)|skew(xdeg,ydeg)|matrix(rotate,scale,translate,skew.....)};
+-moz-transform: ${1:translate(xpx, ypx)|rotate(360deg)|scale(x,y)|skew(xdeg,ydeg)|matrix(rotate,scale,translate,skew.....)};
+-o-transform: ${1:translate(xpx, ypx)|rotate(360deg)|scale(x,y)|skew(xdeg,ydeg)|matrix(rotate,scale,translate,skew.....)};
+-ms-transform: ${1:translate(xpx, ypx)|rotate(360deg)|scale(x,y)|skew(xdeg,ydeg)|matrix(rotate,scale,translate,skew.....)};
+transform: ${1:translate(xpx, ypx)|rotate(360deg)|scale(x,y)|skew(xdeg,ydeg)|matrix(rotate,scale,translate,skew.....)};
+endsnippet
+snippet transform:3d "transform 3d" b
+-webkit-transform: ${1:rotateX(deg)|rotateY(deg)|rotateZ(deg)|rotate3d(x,y,z,deg)};
+-moz-transform: ${1:rotateX(deg)|rotateY(deg)|rotateZ(deg)|rotate3d(x,y,z,deg)};
+-o-transform: ${1:rotateX(deg)|rotateY(deg)|rotateZ(deg)|rotate3d(x,y,z,deg)};
+-ms-transform: ${1:rotateX(deg)|rotateY(deg)|rotateZ(deg)|rotate3d(x,y,z,deg)};
+transform: ${1:rotateX(deg)|rotateY(deg)|rotateZ(deg)|rotate3d(x,y,z,deg)};
 endsnippet

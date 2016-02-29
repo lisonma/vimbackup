@@ -8,19 +8,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/shame
+~MSle0~/diction
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:e test
-:e style.css
-:q
+:sp
 :BundleUpdate
 :BundleInstall
-:BundleClean
 :BundleList
+:w
+:s
+:open test.html
+:q
+:e trans.scss
+:e style.css
+:BundleClean
+:Dash
+:e test
 :tabc
 :e t
 :e
@@ -59,7 +65,6 @@ $
 :Ack pthread_mutex_init
 :set ts=4
 :set nu
-:w
 :wq
 :wq:q!
 :tabclose
@@ -87,7 +92,6 @@ $
 :color peaksea
 :color ir_black
 :UltiSnipsEdit
-:open test.html
 :e Mapper1.java
 :Bundle Clean
 :e .vimrc
@@ -111,10 +115,56 @@ $
 :set nopaste
 
 # Search String History (newest to oldest):
+? \s\+$
+?/co
+?/diction
+?/sys
+?/indent
+?/t_Co
+?/color
+?/theme
+?/library
+?/system
+?/xctool
+?/clang
+?/usr/local/
+?/v1
 ? \$\(cursor\|select\)\$
+?/scss
+?/vim-javascript
+?/js
+?/font
+?/powerline
+?/air
+?/airline
+?/airlin
+?/bold
+?/inden
+?/exec
+?/start
+?/usage
+?/tab
+?/systa
+?/tre
+?/tw
+?/whichwrap
+?/showcmd
+?/rotat
+?/routate
+?/mix
+?/width
+?/w
+?/custom
+?/Input 
+?/prefix
+?/node
+?/youcompleteme
+?/dirname
+?/key
+?/keyt
+?/public
 ?/shame
 ?/super
-?/tab
 ?/supertab
 ?/4
 ?/mul
@@ -124,7 +174,6 @@ $
 ?/emmet
 ?/auto
 ?/mu
-? \s\+$
 ?/8
 ?/lorem
 ?/lore
@@ -137,18 +186,14 @@ $
 ?/group
 ?/javascript
 ?/plugins
-?/theme
 ?/ATJ
 ?/vim-multiple-cursors
-?/font
 ?/fonts
 ?/particle
 ?/complete
 ?/syntastic
 ?/tree
-?/airline
 ?/Indent
-?/indent
 ?/set nu
 ?/num
 ?/sola
@@ -201,7 +246,6 @@ $
 ?/cod
 ?/code
 ?/file
-?/js
 ?/css
 ?/title
 ?/bili
@@ -218,7 +262,6 @@ $
 ?/guifont
 ?/wildmen
 ?/show
-?/showcmd
 ?/guiop
 ?/hello
 ?/6
@@ -256,1454 +299,509 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	<
+"0	LINE	0
+	#include <algorithm>
 "1	LINE	0
-	  color: red;
+	#include <algorithm>
 "2	LINE	0
-	    body
+	  std::vector<> v;
 "3	LINE	0
-	    link
+	Point blank;
+	blank.x = 1.0;
+	blank.y = 2.0;
 "4	LINE	0
-	    @error 
-"5	LINE	0
-	  
-"6	LINE	0
 	
+"5	LINE	0
+	
+"6	LINE	0
+	    if (true) {
 "7	LINE	0
-	`_normalize.scss`
+	        printf("hello world\n");
 "8	LINE	0
 	
 "9	LINE	0
-	jj
+	let g:solarized_visibility="normal"
 "j	CHAR	0
 	j
 ""-	CHAR	0
-	)
+	iostream
 
 # File marks:
-'0  47  17  ~/.zshrc
-'1  1  0  ~/.zshr
-'2  48  19  ~/.zshrc
-'3  12  7  ~/front_end_proj_template/project/client/src/index.html
-'4  10  21  ~/front_end_proj_template/project/client/src/index.html
-'5  3  0  ~/front_end_proj_template/project/client/src/sass/main.scss
-'6  7  0  ~/front_end_proj_template/project/client/src/dist/css/main.css
-'7  1  0  ~/front_end_proj_template/project/client/src/sass/main.scss
-'8  12  0  ~/front_end_proj_template/project/client/src/sass/main.scss
-'9  1  12  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
+'0  16  3  ~/code/thinkcpp/vector.cpp
+'1  15  64  ~/code/thinkcpp/struct.cpp
+'2  13  43  ~/code/thinkcpp/struct.cpp
+'3  8  14  ~/code/thinkcpp/struct.cpp
+'4  125  4  ~/.vimrc.local
+'5  2  27  ~/code/thinkcpp/struct.cpp
+'6  8  0  ~/code/thinkcpp/toupper.cpp
+'7  2  0  ~/code/test.c
+'8  6  0  ~/code/test.c
+'9  1  4  ~/code/test.html
 
 # Jumplist (newest first):
--'  47  17  ~/.zshrc
--'  48  19  ~/.zshrc
--'  1  0  ~/.zshr
--'  44  0  ~/.zshrc
--'  12  7  ~/front_end_proj_template/project/client/src/index.html
--'  3  0  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  10  31  ~/front_end_proj_template/project/client/src/index.html
--'  5  20  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  1  3  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  9  8  ~/front_end_proj_template/project/client/src/index.html
--'  11  3  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  7  33  ~/front_end_proj_template/project/client/src/index.html
--'  2  11  ~/front_end_proj_template/project/client/src/index.html
--'  1  10  ~/front_end_proj_template/project/client/src/index.html
--'  7  0  ~/front_end_proj_template/project/client/src/dist/css/main.css
--'  8  15  ~/front_end_proj_template/project/client/src/dist/css/main.css
--'  1  0  ~/front_end_proj_template/project/client/src/dist/css/main.css
--'  12  0  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  7  0  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  9  15  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  2  0  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  1  12  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  5  2  ~/front_end_proj_template/project/client/src/sass/utils/_variables.scss
--'  2  2  ~/front_end_proj_template/project/client/src/sass/utils/_variables.scss
--'  1  0  ~/project/client/src/sass/utils/_mixins.scss
--'  1  0  ~/project/client/src/sass/utils/_variables.scss
--'  9  25  /private/etc/hosts
--'  1  0  /private/etc/hosts
--'  15  11  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  11  13  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  14  5  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  9  16  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  8  5  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  152  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  6  21  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  5  6  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  3  33  ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
--'  1  13  ~/front_end_proj_template/project/client/src/sass/utils/_variables.scss
--'  144  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  122  4  ~/front_end_proj_template/project/client/src/sass/README.md
--'  110  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  109  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  1  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  106  22  ~/front_end_proj_template/project/client/src/sass/README.md
--'  107  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  101  332  ~/front_end_proj_template/project/client/src/sass/README.md
--'  163  66  ~/front_end_proj_template/project/client/src/sass/README.md
--'  54  207  ~/front_end_proj_template/project/client/src/sass/README.md
--'  1  0  ~/front_end_proj_template/project/client/src/sass/readme.d
--'  34  1  ~/.zshrc
--'  35  3  ~/.zshrc
--'  37  37  ~/.zshrc
--'  152  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  144  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  122  4  ~/front_end_proj_template/project/client/src/sass/README.md
--'  110  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  109  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  1  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  106  22  ~/front_end_proj_template/project/client/src/sass/README.md
--'  107  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  101  332  ~/front_end_proj_template/project/client/src/sass/README.md
--'  163  66  ~/front_end_proj_template/project/client/src/sass/README.md
--'  54  207  ~/front_end_proj_template/project/client/src/sass/README.md
--'  1  0  ~/front_end_proj_template/project/client/src/sass/readme.d
--'  9  25  /private/etc/hosts
--'  1  0  /private/etc/hosts
--'  152  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  144  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  122  4  ~/front_end_proj_template/project/client/src/sass/README.md
--'  110  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  109  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  1  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  106  22  ~/front_end_proj_template/project/client/src/sass/README.md
--'  107  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  101  332  ~/front_end_proj_template/project/client/src/sass/README.md
--'  163  66  ~/front_end_proj_template/project/client/src/sass/README.md
--'  54  207  ~/front_end_proj_template/project/client/src/sass/README.md
--'  1  0  ~/front_end_proj_template/project/client/src/sass/readme.d
--'  152  0  ~/front_end_proj_template/project/client/src/sass/README.md
--'  1  0  ~/project/client/src/sass/utils/_mixins.scss
--'  1  0  ~/project/client/src/sass/utils/_variables.scss
--'  9  25  /private/etc/hosts
--'  1  0  /private/etc/hosts
--'  5  2  ~/front_end_proj_template/project/client/src/sass/utils/_variables.scss
--'  2  2  ~/front_end_proj_template/project/client/src/sass/utils/_variables.scss
--'  5  2  ~/front_end_proj_template/project/client/src/sass/utils/_variables.scss
--'  7  0  ~/front_end_proj_template/project/client/src/dist/css/main.css
--'  8  15  ~/front_end_proj_template/project/client/src/dist/css/main.css
--'  1  0  ~/front_end_proj_template/project/client/src/dist/css/main.css
--'  12  7  ~/front_end_proj_template/project/client/src/index.html
--'  3  0  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  10  31  ~/front_end_proj_template/project/client/src/index.html
--'  5  20  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  1  3  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  9  8  ~/front_end_proj_template/project/client/src/index.html
--'  11  3  ~/front_end_proj_template/project/client/src/sass/main.scss
--'  12  7  ~/front_end_proj_template/project/client/src/index.html
+-'  16  3  ~/code/thinkcpp/vector.cpp
+-'  2  9  ~/code/thinkcpp/vector.cpp
+-'  3  9  ~/code/thinkcpp/vector.cpp
+-'  9  13  ~/code/thinkcpp/vector.cpp
+-'  14  8  ~/code/thinkcpp/vector.cpp
+-'  8  13  ~/code/thinkcpp/vector.cpp
+-'  4  33  ~/code/thinkcpp/vector.cpp
+-'  1  9  ~/code/thinkcpp/vector.cpp
+-'  15  64  ~/code/thinkcpp/struct.cpp
+-'  13  43  ~/code/thinkcpp/struct.cpp
+-'  8  14  ~/code/thinkcpp/struct.cpp
+-'  1  9  ~/code/thinkcpp/struct.cpp
+-'  2  14  ~/code/thinkcpp/struct.cpp
+-'  125  4  ~/.vimrc.local
+-'  126  4  ~/.vimrc.local
+-'  22  30  ~/.vimrc.local
+-'  4  1  ~/code/thinkcpp/struct.cpp
+-'  3  6  ~/code/thinkcpp/struct.cpp
+-'  8  0  ~/code/thinkcpp/toupper.cpp
+-'  10  0  ~/code/thinkcpp/toupper.cpp
+-'  2  0  ~/code/test.c
+-'  9  0  ~/code/test.c
+-'  6  0  ~/code/test.c
+-'  4  1  ~/code/test.c
+-'  1  4  ~/code/test.html
+-'  30  8  ~/code/test.html
+-'  8  8  ~/code/test.c
+-'  11  20  ~/.zshrc
+-'  10  20  ~/.zshrc
+-'  4  20  ~/.vimrc.local
+-'  5  0  ~/.vimrc.local
+-'  83  0  ~/[Vundle] Installer
+-'  11  14  ~/.vimrc.local
+-'  107  14  ~/.vimrc.local
+-'  1  18  ~/code/test.cpp
+-'  14  13  ~/code/test.cpp
+-'  12  13  ~/code/test.cpp
+-'  11  7  ~/code/test.cpp
+-'  10  11  ~/code/test.cpp
+-'  9  5  ~/code/test.cpp
+-'  6  0  ~/code/test.cpp
+-'  18  0  ~/code/test.cpp
+-'  110  27  ~/.vimrc.local
+-'  6  4  ~/.vimrc.local
+-'  9  13  ~/.vimrc.local
+-'  8  19  ~/code/test.cpp
+-'  4  2  ~/code/test.cpp
+-'  2  9  ~/code/test.cpp
+-'  19  0  ~/code/test.cpp
+-'  22  9  ~/code/test.cpp
+-'  1  0  ~/code/string.c
+-'  19  0  ~/code/string.c
+-'  1  13  ~/code/money.c
+-'  22  13  ~/code/money.c
+-'  7  19  ~/.vimrc.local
+-'  7  0  ~/tes.cpp
+-'  5  9  ~/tes.cpp
+-'  1  9  ~/tes.cpp
+-'  8  12  ~/.vimrc.local
+-'  5  20  ~/he.cpp
+-'  1  9  ~/he.cpp
+-'  7  1  ~/test.cpp
+-'  5  9  ~/test.cpp
+-'  1  9  ~/test.cpp
+-'  165  0  ~/[Vundle] Installer
+-'  17  41  ~/.vimrc.bundles.local
+-'  1  0  ~/.vimrc.bundles.local
+-'  18  42  ~/.vimrc.bundles.local
+-'  247  0  ~/[Vundle] Installer
+-'  9  20  ~/.vimrc.bundles.local
+-'  10  11  ~/.vimrc.local
+-'  42  18  ~/.vimrc.local
+-'  55  18  ~/.vimrc.local
+-'  1  0  ~/.vimrc
+-'  76  0  ~/.vimrc
+-'  6  0  ~/code/thinkcpp/toupper.cpp
+-'  1  0  ~/code/thinkcpp/toupper.cpp
+-'  1  19  ~/.vimrc.local
+-'  192  0  ~/.vimrc.local
+-'  11  17  ~/code/thinkcpp/toupper.cpp
+-'  20  3  ~/code/thinkcpp/toupper.cpp
+-'  2  18  ~/code/thinkcpp/toupper.cpp
+-'  2  3  ~/test.html
+-'  10  14  ~/test.html
+-'  13  4  ~/test.html
+-'  7  3  ~/test.html
+-'  1  0  ~/test.html
+-'  328  0  ~/[Vundle] Installer
+-'  15  20  ~/.vimrc.bundles.local
 
 # History of marks within files (newest to oldest):
 
-> ~/.zshrc
-	"	47	17
-	^	50	18
-	.	50	17
-	+	52	1
-	+	76	140
-	+	76	59
-	+	20	0
-	+	18	88
-	+	19	94
-	+	96	99
-	+	61	0
-	+	44	0
-	+	44	60
-	+	43	15
-	+	44	22
-	+	55	0
-	+	96	0
-	+	86	0
-	+	89	0
-	+	88	0
-	+	89	0
-	+	90	0
-	+	91	0
-	+	92	0
-	+	93	0
-	+	94	0
-	+	95	0
-	+	11	19
-	+	75	94
-	+	73	44
-	+	75	36
-	+	37	44
-	+	35	3
-	+	37	26
-	+	35	3
-	+	37	45
-	+	50	17
-	+	50	0
-	+	47	0
-	+	49	0
-	+	48	20
-	+	49	19
-	+	50	17
-
-> ~/.zshr
-	"	1	0
-
-> ~/front_end_proj_template/project/client/src/index.html
-	"	12	7
-	^	10	32
-	.	10	31
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	11	0
-	+	2	13
-	+	6	14
-	+	8	0
-	+	7	42
-	+	11	0
-	+	10	31
-	+	7	36
-	+	10	31
-
-> ~/front_end_proj_template/project/client/src/ControlP
-	"	2	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/front_end_proj_template/project/client/src/sass/main.scss
-	"	3	0
-	^	5	36
-	.	5	35
-	+	2	22
-	+	1	9
-	+	2	9
+> ~/code/thinkcpp/vector.cpp
+	"	16	3
+	^	2	16
+	.	2	15
+	+	1	19
 	+	3	0
-	+	4	0
-	+	6	0
-	+	9	32
-	+	10	15
-	+	6	16
-	+	7	14
-	+	6	0
-	+	5	35
-
-> ~/front_end_proj_template/project/client/README.md
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
-> ~/front_end_proj_template/project/client/src/dist/css/main.css
-	"	7	0
-	.	1	0
-	+	1	0
-
-> ~/front_end_proj_template/project/client/src/sass/utils/_mixins.scss
-	"	7	0
-	^	9	20
-	.	9	19
-	+	2	18
-	+	3	44
-	+	4	24
 	+	5	0
-	+	6	0
-	+	6	49
-	+	8	0
-	+	9	0
-	+	9	0
-	+	9	18
-	+	9	16
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	88
-	+	14	2
-	+	14	0
-	+	11	0
-	+	13	0
-	+	17	0
-	+	15	48
-	+	16	67
-	+	9	19
-
-> ~/front_end_proj_template/project/client/src/sass/ControlP
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/front_end_proj_template/project/client/src/sass/utils/_variables.scss
-	"	5	2
-	^	4	30
-	.	4	29
-	+	1	15
-	+	2	31
-	+	4	29
-
-> ~/project/client/src/sass/utils/_variables.scss
-	"	1	0
-
-> ~/project/client/src/sass/utils/NERD_tree_2
-	"	9	0
-	.	1	0
-	+	1	0
-
-> ~/project/client/src/sass/utils/_mixins.scss
-	"	1	0
-
-> /private/etc/hosts
-	"	9	25
-
-> ~/front_end_proj_template/project/client/src/sass/README.md
-	"	152	0
-	^	161	22
-	.	161	22
-	+	163	0
-	+	163	0
-	+	163	32
-	+	1	0
-	+	163	0
-	+	2	3
-	+	48	42
-	+	2	7
-	+	163	210
-	+	163	0
-	+	51	3
-	+	54	0
-	+	54	0
-	+	52	210
-	+	52	116
-	+	57	18
-	+	58	18
-	+	60	3
-	+	61	221
-	+	61	0
-	+	61	113
-	+	67	7
-	+	70	80
-	+	72	3
-	+	73	400
-	+	73	100
-	+	74	108
-	+	75	114
-	+	83	3
-	+	84	211
-	+	84	110
-	+	90	162
-	+	94	112
-	+	95	109
-	+	163	0
-	+	95	115
-	+	163	0
-	+	97	3
-	+	101	332
-	+	101	0
-	+	101	0
-	+	98	111
-	+	99	104
-	+	102	99
-	+	104	3
-	+	105	338
-	+	105	115
-	+	106	90
-	+	107	121
-	+	106	82
-	+	110	1
-	+	114	108
-	+	117	112
-	+	118	114
-	+	126	7
-	+	163	0
-	+	120	2
-	+	121	2
-	+	122	2
-	+	123	2
-	+	124	2
-	+	125	2
-	+	126	2
-	+	128	16
-	+	133	3
-	+	161	22
-
-> ~/front_end_proj_template/project/client/src/sass/undotree_2
-	"	3	1
-	.	3	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	3	0
-
-> ~/front_end_proj_template/project/client/src/sass/diffpanel_3
-	"	1	0
-	.	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-
-> ~/front_end_proj_template/project/client/src/sass/utils/NERD_tree_2
-	"	15	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.vim/UltiSnips/scss.snippets
-	"	40	27
-	^	40	28
-	.	40	27
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	42	0
-	+	1	20
-	+	2	45
 	+	4	0
 	+	6	0
-	+	4	19
-	+	5	28
-	+	7	0
-	+	9	0
-	+	7	12
-	+	8	3
-	+	10	0
-	+	10	0
-	+	10	26
-	+	10	49
-	+	12	10
-	+	11	67
-	+	8	20
-	+	13	0
-	+	15	0
-	+	13	22
-	+	14	26
-	+	15	0
-	+	16	0
-	+	25	0
-	+	16	24
-	+	19	39
-	+	20	5
-	+	23	16
-	+	24	5
-	+	23	10
-	+	26	0
-	+	28	0
-	+	26	22
-	+	27	14
-	+	29	0
-	+	33	0
-	+	29	18
-	+	31	9
-	+	34	0
-	+	38	0
-	+	34	16
-	+	36	4
-	+	39	0
-	+	41	0
-	+	39	17
-	+	40	27
-
-> ~/front_end_proj_template/project/client/src/sass/readme.d
-	"	1	0
-
-> ~/study notes/learn css layout/sass-first/base/README.md
-	"	1	5
-	^	3	6
-	.	3	5
-	+	1	35
-	+	2	40
-	+	3	5
-
-> ~/study notes/learn css layout/compass-proj/sass/test.scss
-	"	14	1
-	^	13	3
-	.	14	0
-	+	3	21
-	+	3	20
-	+	3	0
-	+	3	0
-	+	3	29
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	25
-	+	3	4
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	12
-	+	3	25
-	+	3	0
-	+	3	22
-	+	3	0
-	+	3	0
-	+	3	30
-	+	3	20
-	+	3	26
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	52
-	+	3	25
-	+	3	0
-	+	3	0
-	+	3	29
-	+	3	0
-	+	3	0
-	+	3	21
-	+	3	0
-	+	3	0
-	+	15	17
-	+	15	18
-	+	16	28
-	+	19	21
-	+	18	32
-	+	19	0
-	+	3	0
-	+	3	0
-	+	3	0
-	+	4	0
-	+	5	12
-	+	3	27
-	+	1	57
-	+	2	39
-	+	8	0
-	+	9	0
-	+	11	38
-	+	12	16
-	+	13	3
+	+	8	21
+	+	12	12
 	+	14	0
-
-> ~/study notes/learn css layout/main.html
-	"	13	21
-	^	13	22
-	.	13	21
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	353
-	+	1	345
-	+	1	363
-	+	1	345
-	+	1	345
-	+	1	362
-	+	1	345
-	+	1	384
-	+	1	392
-	+	1	387
-	+	1	387
-	+	1	369
-	+	1	371
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	370
-	+	1	345
-	+	1	379
-	+	1	345
-	+	1	412
-	+	1	345
-	+	1	412
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	345
-	+	1	379
-	+	1	387
-	+	1	345
-	+	1	245
-	+	1	234
-	+	1	267
-	+	1	269
-	+	1	305
-	+	1	333
-	+	1	16
-	+	1	969
-	+	1	969
-	+	1	992
-	+	1	969
-	+	1	969
-	+	1	992
-	+	1	992
-	+	1	969
-	+	1	217
-	+	1	237
-	+	1	240
-	+	1	239
-	+	1	396
-	+	1	386
-	+	1	272
-	+	1	317
-	+	1	352
-	+	1	387
-	+	1	475
-	+	1	475
-	+	1	943
-	+	1	16
-	+	1	933
-	+	1	475
-	+	1	16
-	+	1	588
-	+	1	588
-	+	1	217
-	+	1	381
-	+	1	461
-	+	1	521
-	+	1	579
-	+	1	15
-	+	1	16
-	+	1	112
-	+	1	232
-	+	1	600
-	+	1	607
-	+	1	229
-	+	2	0
 	+	16	0
-	+	16	0
-	+	16	0
-	+	16	0
-	+	16	0
-	+	12	0
-	+	14	44
-	+	13	21
-
-> ~/study notes/learn css layout/ControlP
-	"	5	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/study notes/learn css layout/style.css
-	"	7	0
-	^	13	0
-	.	13	0
-	+	1	25
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	25
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	17
-	+	1	0
-	+	1	22
-	+	1	16
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	28
-	+	1	23
-	+	1	0
-	+	1	0
-	+	1	17
-	+	1	38
-	+	1	36
-	+	1	16
-	+	1	14
-	+	1	13
-	+	1	17
-	+	1	12
-	+	1	0
-	+	1	19
-	+	1	4
-	+	1	12
-	+	1	0
-	+	1	0
-	+	1	14
-	+	1	13
-	+	1	17
-	+	1	36
-	+	1	0
-	+	1	0
-	+	1	18
-	+	1	38
-	+	1	13
-	+	1	31
-	+	1	19
-	+	1	11
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	18
-	+	1	25
-	+	1	0
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	0
-	+	1	19
-	+	1	38
-	+	1	38
-	+	1	0
-	+	1	0
-	+	1	9
-	+	1	18
-	+	1	25
-	+	1	20
-	+	1	0
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	0
-	+	1	17
-	+	1	0
-	+	1	0
-	+	1	16
-	+	1	18
-	+	1	10
-	+	1	0
-	+	1	11
-	+	1	27
-	+	1	34
-	+	1	37
-	+	1	36
-	+	1	38
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	0
-	+	1	1
-	+	1	1
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	3
-	+	1	6
-	+	2	0
+	+	15	19
 	+	8	14
-	+	13	0
+	+	9	0
+	+	8	16
+	+	3	18
+	+	8	0
+	+	3	0
+	+	2	15
 
-> ~/study notes/learn css layout/compass-proj/sass/ControlP
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/study notes/learn css layout/compass-proj/sass/main.html
-	"	7	32
-	^	7	33
-	.	7	0
-	+	1	0
-	+	1	92
-	+	1	148
+> ~/code/thinkcpp/struct.cpp
+	"	15	64
+	^	15	65
+	.	15	64
+	+	3	0
+	+	3	11
+	+	4	13
+	+	6	0
+	+	8	0
+	+	6	0
+	+	9	0
+	+	8	0
+	+	16	39
+	+	2	26
 	+	2	0
-	+	6	19
-	+	12	10
-	+	7	0
+	+	1	19
+	+	12	57
+	+	13	43
+	+	14	27
+	+	15	64
 
-> ~/study notes/learn css layout/position.md
-	"	9	33
-	^	9	127
-	.	9	124
-	+	3	34
-	+	4	11
-	+	7	57
-	+	5	76
-	+	9	124
-
-> ~/study notes/learn css layout/float.md
-	"	2	32
-	^	6	24
-	.	6	23
-	+	3	3
-	+	4	5
-	+	6	23
-
-> ~/study notes/learn css layout/margin.md
-	"	13	3
-	^	11	19
-	.	11	18
-	+	4	111
-	+	5	2
-	+	5	3
-	+	6	47
-	+	8	6
-	+	9	10
-	+	11	18
-
-> ~/study notes/learn css layout/box-model.md
-	"	16	1
-	^	2	115
-	.	2	114
-	+	2	114
-
-> ~/study notes/learn css layout/sassguidlines.scss
-	"	1	0
-	^	34	0
-	.	34	0
-	+	1	18
-	+	1	22
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	16
-	+	1	18
-	+	1	23
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	0
-	+	36	0
-	+	35	0
-	+	35	0
-	+	35	0
-	+	35	0
-	+	35	0
-	+	35	0
-	+	35	0
-	+	35	26
-	+	3	15
-	+	36	0
-	+	35	4
-	+	35	0
-	+	35	0
-	+	35	0
-	+	35	0
-	+	35	14
-	+	35	0
-	+	6	0
-	+	8	0
-	+	8	17
-	+	8	0
-	+	8	0
-	+	8	0
-	+	7	25
-	+	9	28
-	+	15	0
-	+	17	0
-	+	15	32
-	+	17	0
-	+	17	23
-	+	17	19
-	+	17	0
-	+	17	0
-	+	16	0
-	+	16	25
-	+	22	0
-	+	16	20
-	+	15	0
-	+	15	0
-	+	15	4
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	11	18
-	+	12	41
-	+	13	73
-	+	19	18
-	+	20	42
-	+	21	73
-	+	22	4
-	+	14	17
-	+	22	17
-	+	23	0
-	+	24	0
-	+	23	34
-	+	24	41
-	+	25	1
-	+	25	0
-	+	26	30
-	+	25	0
-	+	26	34
-	+	27	14
-	+	27	14
-	+	31	3
-	+	31	0
-	+	30	14
-	+	32	32
-	+	33	41
-	+	34	0
-
-> ~/.vimrc.local
-	"	210	49
-	^	210	50
-	.	210	49
-	+	102	0
-	+	102	0
-	+	105	0
+> ~/code/thinkcpp/Rectangle.cpp
+	"	17	11
+	^	16	98
+	.	16	97
+	+	1	19
+	+	2	0
 	+	12	0
-	+	82	0
-	+	247	26
-	+	82	0
-	+	51	0
-	+	46	0
-	+	5	0
-	+	1	0
-	+	47	12
-	+	48	12
-	+	248	29
-	+	249	12
-	+	250	13
-	+	251	14
-	+	252	8
-	+	269	0
-	+	253	14
-	+	229	29
-	+	254	19
-	+	255	15
-	+	269	0
-	+	255	15
-	+	256	0
-	+	202	5
-	+	256	15
-	+	254	4
-	+	9	26
-	+	11	33
-	+	257	9
-	+	149	50
-	+	55	0
-	+	51	23
-	+	58	40
-	+	35	24
-	+	257	10
-	+	258	0
-	+	269	0
-	+	260	0
-	+	5	0
-	+	6	0
-	+	5	0
-	+	7	18
-	+	196	0
-	+	70	30
-	+	49	23
-	+	39	22
-	+	49	23
-	+	39	22
-	+	49	23
-	+	39	22
-	+	49	23
-	+	41	25
-	+	39	22
-	+	49	23
-	+	46	0
-	+	51	23
-	+	39	22
-	+	49	23
-	+	41	25
-	+	51	23
-	+	46	0
-	+	39	22
-	+	49	23
-	+	72	0
-	+	63	0
-	+	71	0
-	+	185	0
-	+	185	0
-	+	185	0
-	+	185	0
-	+	185	0
-	+	185	0
-	+	186	72
-	+	185	75
-	+	187	75
-	+	189	0
-	+	189	0
-	+	188	0
-	+	211	48
-	+	213	54
-	+	206	0
-	+	207	0
-	+	205	0
-	+	208	0
-	+	82	43
-	+	259	0
-	+	260	0
-	+	261	0
-	+	262	0
-	+	263	0
-	+	264	0
-	+	265	0
-	+	266	0
-	+	267	0
-	+	268	0
-	+	258	0
-	+	210	49
-
-> ~/.vim/UltiSnips/undotree_2
-	"	7	1
-	.	3	0
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	0
-
-> ~/.vim/UltiSnips/diffpanel_3
-	"	1	0
-	.	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-
-> ~/study notes/learn css layout/test
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/UltiSnips/css.snippets
-	"	33	0
-	.	34	0
-	+	1	0
-	+	5	0
-	+	1	0
-	+	3	3
-	+	6	0
+	+	12	0
+	+	14	22
 	+	8	0
-	+	6	26
-	+	7	28
+	+	8	15
+	+	10	23
+	+	5	0
+	+	5	11
+	+	6	13
+	+	14	37
+	+	15	95
+	+	16	97
+
+> ~/code/thinkcpp/makeTime.cpp
+	"	25	1
+	^	23	97
+	.	23	96
+	+	1	19
+	+	2	0
+	+	4	0
+	+	3	0
+	+	19	0
+	+	24	12
+	+	24	0
+	+	9	0
+	+	22	11
+	+	21	25
+	+	22	30
 	+	9	0
 	+	11	0
-	+	9	22
-	+	10	22
-	+	12	0
-	+	14	0
-	+	12	20
-	+	13	20
-	+	7	39
-	+	15	0
-	+	17	0
-	+	15	27
-	+	16	11
-	+	17	9
-	+	16	27
-	+	18	0
-	+	20	0
-	+	18	22
-	+	19	3
-	+	13	20
-	+	19	19
-	+	21	0
-	+	23	0
-	+	21	21
-	+	22	21
-	+	24	0
-	+	33	0
-	+	24	9
-	+	32	3
-	+	29	46
-	+	30	49
-	+	31	50
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	28
-	+	34	0
-
-> ~/study notes/learn css layout/compass-proj/config.rb
-	"	26	23
-	^	13	69
-	.	13	68
-	+	27	0
-	+	13	68
-
-> ~/study notes/learn css layout/sassguidlines.sass
-	"	7	0
-	^	7	0
-	.	7	0
-	+	2	16
-	+	2	16
-	+	8	0
-	+	8	0
-	+	8	11
-	+	8	0
-	+	2	15
-	+	1	42
-	+	4	18
+	+	9	24
+	+	14	30
+	+	12	32
+	+	14	34
+	+	13	26
+	+	16	20
+	+	17	13
 	+	5	0
-	+	5	32
-	+	6	22
-	+	8	0
-	+	7	0
+	+	5	10
+	+	7	15
+	+	23	96
 
-> ~/study notes/learn css layout/test.html
-	"	21	21
-	^	21	22
-	.	21	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	0
-	+	1	918
-	+	3	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	101	0
-	+	101	266
-	+	101	224
-	+	101	245
-	+	15	0
-	+	15	0
-	+	16	0
-	+	15	0
-	+	16	0
-	+	100	0
-	+	16	10
+> ~/code/thinkcpp/time.cpp
+	"	49	19
+	^	62	18
+	.	62	17
+	+	1	19
 	+	2	0
-	+	98	0
-	+	22	7
-	+	23	6
-	+	25	0
-	+	24	28
-	+	20	0
+	+	65	0
+	+	65	0
+	+	67	31
+	+	5	0
+	+	5	10
+	+	8	15
+	+	68	41
+	+	69	17
+	+	10	0
+	+	12	0
+	+	10	24
+	+	12	68
+	+	13	0
+	+	12	75
+	+	17	0
+	+	19	0
+	+	17	30
+	+	22	36
+	+	23	0
+	+	24	0
+	+	24	4
+	+	23	26
+	+	25	19
+	+	26	0
+	+	27	0
+	+	28	0
+	+	29	20
+	+	31	12
+	+	17	34
+	+	14	0
+	+	14	0
+	+	14	0
+	+	16	0
+	+	15	23
+	+	33	0
+	+	35	0
+	+	36	0
+	+	38	0
+	+	36	35
+	+	38	0
+	+	38	0
+	+	38	20
+	+	39	0
+	+	40	0
+	+	41	18
+	+	43	0
+	+	44	0
+	+	45	16
+	+	39	7
+	+	44	4
+	+	41	4
+	+	44	7
+	+	48	0
+	+	50	0
+	+	51	0
+	+	53	0
+	+	51	57
+	+	55	36
+	+	56	0
+	+	56	2
+	+	56	2
+	+	64	0
+	+	56	0
+	+	57	0
+	+	58	19
+	+	60	0
+	+	61	0
+	+	62	17
+
+> ~/.vim/UltiSnips/c.snippets
+	"	2	2
+	^	4	3
+	.	5	0
+	+	19	0
 	+	21	0
+	+	19	36
+	+	20	22
+	+	22	0
+	+	24	0
+	+	22	35
+	+	23	27
+	+	20	27
+	+	25	0
+	+	27	0
+	+	25	35
+	+	26	8
+	+	26	34
+	+	28	0
+	+	30	0
+	+	28	22
+	+	29	0
+	+	31	0
+	+	33	0
+	+	31	19
+	+	32	18
+	+	25	11
+	+	34	0
+	+	36	0
+	+	34	28
+	+	35	18
+	+	34	10
+	+	35	33
+	+	13	56
+	+	14	3
+	+	37	0
+	+	39	0
+	+	37	26
+	+	38	32
+	+	5	0
 
-> ~/[Vundle] Installer
-	"	71	0
-	.	1	0
-	+	499	0
-	+	426	0
-	+	354	0
-	+	283	0
-	+	212	0
-	+	142	0
-	+	71	0
+> ~/.vim/UltiSnips/cpp.snippets
+	"	1	17
+	^	2	18
+	.	2	17
 	+	1	0
+	+	3	0
+	+	1	62
+	+	2	17
 
-> ~/.vimrc.bundles.local
-	"	6	1
-	^	6	2
-	.	6	1
-	+	1	0
-	+	8	0
-	+	7	10
-	+	7	0
-	+	7	9
-	+	7	7
-	+	7	9
-	+	1	0
-	+	7	0
-	+	7	0
-	+	7	0
-	+	1	0
-	+	7	0
-	+	7	8
-	+	7	9
-	+	6	1
-
-> ~/test
+> ~/code/thinkcpp/struct2.cpp
 	"	1	0
 	.	1	0
-	+	1	7
-	+	1	8
-	+	1	16
-	+	1	24
-	+	1	32
-	+	1	40
-	+	1	48
-	+	1	56
-	+	1	64
 	+	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	7
-	+	1	8
-	+	1	16
-	+	1	24
-	+	1	32
-	+	1	40
-	+	1	48
-	+	1	56
-	+	1	64
-	+	1	72
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	7
-	+	1	8
-	+	1	16
-	+	1	24
-	+	1	32
-	+	1	40
-	+	1	48
-	+	1	56
-	+	1	64
-	+	1	72
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	13
 	+	1	0
 
-> ~/.vimrc
-	"	76	4
+> ~/code/thinkcpp/getline.cpp
+	"	4	16
+	^	10	25
+	.	10	25
+	+	1	19
+	+	3	0
+	+	6	0
+	+	6	0
+	+	8	16
+	+	9	0
+	+	2	19
+	+	11	20
+	+	12	22
+	+	10	25
 
-> ~/study notes/learn css layout/test.css
-	"	10	1
+> ~/code/thinkcpp/apstring.cpp
+	"	5	32
 	^	7	33
 	.	7	32
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	27
-	+	1	27
-	+	1	20
-	+	24	0
-	+	1	27
-	+	1	24
 	+	1	19
-	+	23	0
-	+	1	4
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
-	+	11	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	22	0
+	+	1	17
+	+	1	0
+	+	1	17
+	+	1	26
+	+	1	29
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
+	+	1	2
+	+	1	17
 	+	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	11	0
+	+	1	19
 	+	2	0
-	+	2	0
-	+	10	0
-	+	10	21
-	+	10	23
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	7	0
+	+	4	16
+	+	8	0
+	+	5	0
+	+	5	0
+	+	5	35
 	+	7	32
 
-> ~/study notes/learn css layout/NERD_tree_1
-	"	20	0
+> ~/code/thinkcpp/streamstate.cpp
+	"	6	1
+	^	5	18
+	.	5	17
+	+	1	19
+	+	6	0
+	+	9	0
+	+	9	0
+	+	12	8
+	+	13	85
+	+	17	0
+	+	17	0
+	+	17	6
+	+	17	0
+	+	17	27
+	+	17	56
+	+	18	13
+	+	7	0
+	+	17	21
+	+	17	0
+	+	20	37
+	+	21	15
+	+	17	0
+	+	21	34
+	+	11	15
+	+	6	0
+	+	2	23
+	+	3	18
+	+	4	19
+	+	5	17
+
+> ~/code/thinkcpp/handleuserinput.cpp
+	"	1	1
+	^	9	74
+	.	9	73
+	+	1	19
+	+	2	0
+	+	5	0
+	+	5	0
+	+	7	8
+	+	8	12
+	+	9	73
+
+> ~/code/thinkcpp/returnPoint.cpp
+	"	25	1
+	^	19	23
+	.	19	22
+	+	1	19
+	+	2	0
+	+	21	0
+	+	3	60
+	+	21	0
+	+	21	0
+	+	23	22
+	+	24	16
+	+	26	53
+	+	8	0
+	+	8	15
+	+	10	22
+	+	21	0
+	+	5	0
+	+	5	11
+	+	6	14
+	+	23	48
+	+	26	87
+	+	12	0
+	+	14	0
+	+	12	36
+	+	14	46
+	+	15	15
+	+	26	0
+	+	26	20
+	+	21	4
+	+	26	0
+	+	26	0
+	+	25	20
+	+	17	0
+	+	20	0
+	+	17	27
+	+	26	0
+	+	19	0
+	+	20	0
+	+	19	22
+
+> ~/code/thinkcpp/swapValue.cpp
+	"	16	1
+	^	17	36
+	.	17	35
+	+	1	19
+	+	2	0
+	+	12	0
+	+	12	0
+	+	14	13
+	+	17	62
+	+	5	0
+	+	7	0
+	+	5	23
+	+	10	9
+	+	17	35
+
+> ~/code/thinkcpp/ControlP
+	"	1	0
 	.	1	0
 	+	1	0
 	+	1	0
@@ -1713,561 +811,160 @@ $
 	+	1	0
 	+	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
-> ~/.virmc.local
-	"	1	0
+> ~/code/thinkcpp/stcopy.cpp
+	"	9	10
+	^	10	54
+	.	10	53
+	+	1	19
+	+	2	0
+	+	2	11
+	+	3	13
+	+	5	0
+	+	7	24
+	+	10	53
 
-> ~/test.c
-	"	2	7
-	^	2	8
-	.	2	8
-	+	1	18
-	+	42	0
-	+	44	22
-	+	1	0
-	+	39	30
-	+	1	0
-	+	35	30
-	+	1	18
-	+	27	0
-	+	27	0
-	+	29	23
-	+	30	10
+> ~/.vimrc.local
+	"	125	4
+	^	31	31
+	.	127	0
+	+	272	0
+	+	227	49
+	+	227	0
+	+	227	0
+	+	222	12
+	+	223	15
+	+	224	16
+	+	228	9
+	+	53	22
+	+	54	31
+	+	66	0
+	+	64	0
+	+	22	30
 	+	23	0
 	+	25	0
-	+	25	40
-	+	33	7
-	+	1	18
-	+	23	0
-	+	23	23
-	+	23	0
-	+	13	0
-	+	15	0
-	+	16	0
-	+	16	39
-	+	18	18
+	+	24	0
+	+	225	0
+	+	227	0
+	+	229	0
+	+	194	51
+	+	173	0
+	+	178	0
+	+	181	0
+	+	206	0
+	+	206	0
+	+	209	31
+	+	213	21
+	+	284	0
+	+	284	0
+	+	283	0
 	+	9	0
-	+	11	0
-	+	11	30
-	+	19	28
-	+	1	18
-	+	1	0
-	+	1	18
-	+	2	0
+	+	9	0
 	+	8	0
-	+	2	8
-
-> ~/.vim/bundle/emmet-vim/autoload/emmet/lang/css.vim
-	"	63	24
-
-> ~/test.md
-	"	1	0
-	.	20	0
-	+	20	0
-	+	20	0
-	+	5	69
-	+	4	0
-	+	5	45
-	+	6	19
-	+	5	0
-	+	20	0
-	+	10	14
-	+	12	46
-	+	14	48
-	+	13	3
-	+	10	39
-	+	5	6
-	+	6	12
-	+	3	39
-	+	10	9
-	+	14	0
-	+	11	38
-	+	15	16
-	+	17	35
-	+	16	8
-	+	17	21
-	+	16	1
-	+	19	30
-	+	18	8
-	+	16	1
-	+	7	1
-	+	9	1
-	+	4	1
-	+	1	1
-	+	20	0
-
-> ~/study notes/learn css layout/__Tagbar__
-	"	1	0
-	.	4	0
-	+	4	0
-	+	4	0
-
-> ~/study notes/learn css layout/NERD_tree_2
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/study notes/learn css layout/width.md
-	"	10	66
-	^	10	67
-	.	10	66
-	+	6	24
-	+	7	17
-	+	9	23
-	+	10	66
-
-> ~/[Vundle] list
-	"	70	0
-	.	1	0
-	+	140	0
-	+	70	0
-	+	1	0
-
-> ~/[Vundle] clean
-	"	3	0
-	.	1	0
-	+	13	0
-	+	11	0
-	+	9	0
-	+	4	0
-	+	3	0
-	+	1	0
-
-> ~/__Tagbar__
-	"	5	0
-	.	6	0
-	+	9	0
-	+	9	0
-	+	6	0
-
-> ~/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.viminfo
-	"	409	1
-
-> ~/NERD_tree_2
-	"	6	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/NERD_tree_3
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/UltiSnips/test
-	"	1	15
-	^	1	8
-	.	2	0
-	+	1	7
-	+	1	8
-	+	1	16
-	+	1	24
-	+	1	32
-	+	1	40
-	+	1	48
-	+	1	56
-	+	1	64
-	+	1	72
-	+	2	0
-	+	1	72
-	+	1	64
-	+	1	56
-	+	1	48
-	+	1	40
-	+	1	32
-	+	1	24
-	+	1	16
-	+	1	8
-	+	1	8
-	+	1	16
-	+	1	24
-	+	1	32
-	+	1	40
-	+	1	48
-	+	1	56
-	+	1	64
-	+	1	72
-	+	2	0
-	+	1	7
-	+	1	8
-	+	1	16
-	+	1	24
-	+	1	32
-	+	1	40
-	+	1	48
-	+	1	56
-	+	1	64
-	+	1	72
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	1	7
-	+	1	8
-	+	1	16
-	+	1	24
-	+	1	32
-	+	1	40
-	+	1	48
-	+	1	56
-	+	1	64
-	+	1	72
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/.vim/UltiSnips/NERD_tree_2
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/UltiSnips/__Tagbar__
-	"	1	0
-
-> ~/.vim/UltiSnips/NERD_tree_1
-	"	6	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.vim/UltiSnips/test.c
-	"	1	0
-	^	1	8
-	.	1	7
-	+	1	7
-
-> ~/study notes/learn css layout/flexbox.md
-	"	1	16
-	^	44	19
-	.	44	19
-	+	2	204
-	+	3	195
-	+	4	0
-	+	6	30
-	+	8	264
-	+	9	13
-	+	11	115
-	+	47	121
-	+	12	151
-	+	13	3
-	+	15	0
-	+	16	9
-	+	17	0
-	+	18	31
-	+	19	34
-	+	20	32
-	+	21	34
-	+	25	42
-	+	27	0
-	+	30	0
-	+	46	0
-	+	46	0
-	+	37	25
-	+	40	16
-	+	44	19
-
-> ~/.vim/UltiSnips/html.snippets
-	"	151	4
-
-> ~/.vim/UltiSnips/test.html
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	90	0
-	+	1	0
-
-> ~/书籍/css.chm
-	"	152	0
-
-> ~/study notes/learn css layout/column.md
-	"	16	3
-	^	1	9
-	.	1	8
-	+	2	36
-	+	3	0
-	+	3	3
-	+	3	5
-	+	3	3
-	+	4	53
-	+	6	3
-	+	12	19
-	+	16	0
-	+	13	0
-	+	11	11
-	+	12	11
-	+	1	8
-
-> ~/.vimrc.bundles
-	"	226	13
-
-> ~/.vimrc.before.local
-	"	31	74
-	.	32	103
-	+	32	103
-
-> ~/study notes/learn css layout/inline-block.md
-	"	21	1
-	^	26	115
-	.	26	93
-	+	27	1
-	+	27	0
-	+	4	3
-	+	6	6
-	+	10	15
-	+	12	12
-	+	13	15
-	+	16	7
-	+	20	15
-	+	23	112
-	+	24	21
-	+	26	114
-	+	26	93
-
-> ~/study notes/learn css layout/media.md
-	"	5	20
-	^	5	21
-	.	5	20
-	+	1	14
-	+	3	6
-	+	4	38
-	+	5	20
-
-> ~/study notes/learn css layout/clear.md
-	"	10	18
-	^	28	16
-	.	28	16
-	+	2	18
-	+	8	24
 	+	9	26
-	+	11	7
-	+	12	16
-	+	14	6
-	+	15	5
-	+	16	16
-	+	23	0
-	+	24	12
-	+	25	18
-	+	23	6
-	+	20	8
-	+	21	23
-	+	30	0
-	+	27	0
-	+	28	16
+	+	154	0
+	+	155	0
+	+	154	0
+	+	8	0
+	+	9	0
+	+	155	0
+	+	154	0
+	+	155	29
+	+	154	0
+	+	155	0
+	+	154	24
+	+	213	37
+	+	222	0
+	+	223	0
+	+	224	0
+	+	225	0
+	+	226	1
+	+	105	0
+	+	105	0
+	+	110	33
+	+	109	0
+	+	108	13
+	+	110	0
+	+	109	37
+	+	110	28
+	+	109	22
+	+	110	0
+	+	109	25
+	+	213	26
+	+	214	0
+	+	194	0
+	+	8	18
+	+	9	19
+	+	8	20
+	+	9	18
+	+	8	21
+	+	9	19
+	+	10	0
+	+	9	0
+	+	9	0
+	+	7	0
+	+	9	0
+	+	5	0
+	+	10	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	7	0
+	+	6	11
+	+	8	26
+	+	11	0
+	+	8	20
+	+	4	18
+	+	8	21
+	+	7	18
+	+	11	0
+	+	10	0
+	+	8	20
+	+	10	0
+	+	8	18
+	+	110	0
+	+	12	36
+	+	34	30
+	+	34	0
+	+	125	0
+	+	127	0
 
-> ~/Pictures/[Vundle] list
-	"	14	0
-	.	1	0
-	+	1	0
-
-> ~/study notes/learn css layout/[Vundle] list
-	"	14	16
-	.	1	0
-	+	1	0
-
-> ~/.tern-project
-	"	1	1
-
-> ~/study notes/learn css layout/display.md
-	"	42	3
-	^	26	25
-	.	26	24
-	+	48	8
-	+	49	96
-	+	45	156
-	+	47	145
-	+	64	0
-	+	51	3
-	+	62	9
-	+	5	3
-	+	6	111
-	+	4	109
-	+	8	98
-	+	10	3
-	+	11	14
-	+	41	14
-	+	26	24
-
-> ~/study notes/learn css layout/t
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
+> ~/code/thinkcpp/toupper.cpp
+	"	8	0
+	^	10	1
+	.	11	0
+	+	1	19
+	+	59	0
+	+	61	20
+	+	62	26
+	+	63	20
+	+	2	0
+	+	3	0
+	+	55	0
+	+	11	0
+	+	11	0
 
 > ~/code/test.c
-	"	12	13
-	^	5	15
-	.	5	14
-	+	1	18
-	+	18	0
-	+	20	0
-	+	22	18
-	+	24	32
-	+	25	16
+	"	2	0
+	^	9	0
+	.	9	0
 	+	1	0
-	+	15	0
+	+	1	0
+	+	1	8
+	+	1	0
 	+	1	18
-	+	7	0
-	+	7	22
-	+	7	0
-	+	7	0
-	+	7	0
-	+	9	22
-	+	10	14
-	+	11	11
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	18
 	+	2	0
 	+	4	0
-	+	2	16
-	+	5	14
-
-> ~/code/person.h
-	"	3	0
-	^	7	9
-	.	7	8
-	+	1	0
-	+	1	0
-	+	2	18
-	+	3	10
-	+	2	17
-	+	6	13
-	+	7	8
+	+	4	9
+	+	8	0
+	+	8	0
+	+	9	0
 
 > ~/code/NERD_tree_1
 	"	6	0
@@ -2294,229 +991,1751 @@ $
 	+	1	0
 	+	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
 > ~/code/__Tagbar__
-	"	11	3
-	.	12	0
-	+	19	0
-	+	12	0
-	+	12	0
-
-> ~/code/string.c
-	"	19	0
-	.	20	0
-	+	1	18
-	+	12	0
-	+	14	22
-	+	15	25
-	+	14	8
-	+	17	11
-	+	19	0
-	+	18	16
-	+	2	22
-	+	12	9
-	+	15	14
-	+	3	0
+	"	4	4
+	.	5	0
+	+	7	0
 	+	5	0
-	+	6	0
-	+	6	24
-	+	7	16
-	+	9	0
-	+	9	14
-	+	9	16
-	+	9	7
-	+	9	14
-	+	10	14
-	+	9	0
-	+	10	27
-	+	20	0
 
-> ~/code/.vimrc.local
-	"	2	5
-	^	2	5
-	.	2	4
-	+	1	22
-	+	2	4
-
-> ~/test.html
-	"	1	15
-	^	7	50
-	.	7	49
-	+	1	0
-	+	90	0
-	+	7	49
-
-> ~/code/money.c
-	"	13	19
-	^	24	24
-	.	24	23
-	+	1	18
-	+	2	19
-	+	26	0
-	+	4	19
-	+	6	17
-	+	6	16
-	+	6	0
-	+	6	48
-	+	6	18
-	+	6	0
-	+	6	18
-	+	6	1
-	+	6	0
-	+	13	0
-	+	14	0
-	+	15	67
-	+	17	43
-	+	12	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	20	51
-	+	21	17
-	+	22	12
-	+	23	13
-	+	25	0
-	+	24	10
-	+	24	0
-	+	24	23
-
-> ~/Downloads/.vimrc.local
-	"	1	0
-
-> ~/vimbackup-proj/.git/COMMIT_EDITMSG
-	"	1	16
-	^	1	17
-	.	1	16
+> ~/code/test.html
+	"	1	4
+	^	1	191
+	.	32	4
+	+	1	467
+	+	1	680
+	+	1	467
+	+	1	420
+	+	1	403
+	+	1	461
+	+	1	420
 	+	1	16
+	+	1	1497
+	+	1	834
+	+	1	822
+	+	1	795
+	+	1	795
+	+	1	818
+	+	1	814
+	+	1	795
+	+	1	795
+	+	1	812
+	+	1	813
+	+	1	795
+	+	1	1497
+	+	1	833
+	+	1	830
+	+	1	1488
+	+	1	402
+	+	1	403
+	+	1	16
+	+	1	507
+	+	1	408
+	+	1	408
+	+	1	395
+	+	1	0
+	+	1	2
+	+	1	2
+	+	1	0
+	+	1	0
+	+	1	30
+	+	1	3
+	+	1	16
+	+	1	13
+	+	1	15
+	+	1	22
+	+	1	23
+	+	1	34
+	+	1	15
+	+	1	16
+	+	1	28
+	+	1	51
+	+	1	141
+	+	1	140
+	+	1	191
+	+	1	504
+	+	1	238
+	+	1	455
+	+	1	455
+	+	1	455
+	+	1	299
+	+	1	343
+	+	1	342
+	+	1	387
+	+	1	419
+	+	1	442
+	+	1	468
+	+	1	485
+	+	1	555
+	+	1	564
+	+	1	613
+	+	1	670
+	+	1	674
+	+	1	595
+	+	1	649
+	+	1	679
+	+	1	16
+	+	1	677
+	+	1	190
+	+	1	16
+	+	1	653
+	+	1	15
+	+	1	16
+	+	1	405
+	+	1	389
+	+	2	0
+	+	14	8
+	+	15	8
+	+	18	8
+	+	18	0
+	+	31	8
+	+	18	8
+	+	13	4
+	+	14	4
+	+	15	4
+	+	16	4
+	+	17	4
+	+	18	4
+	+	19	4
+	+	28	4
+	+	29	4
+	+	30	4
+	+	31	4
+	+	32	4
 
-> ~/vimbackup-proj/README.md
-	"	6	4
-	.	4	4
-	+	4	4
+> ~/.zshrc
+	"	11	20
+	^	16	31
+	.	16	30
+	+	55	1
+	+	85	140
+	+	85	59
+	+	23	0
+	+	21	88
+	+	22	94
+	+	105	99
+	+	64	0
+	+	47	0
+	+	47	60
+	+	46	15
+	+	47	22
+	+	58	0
+	+	105	0
+	+	95	0
+	+	98	0
+	+	97	0
+	+	98	0
+	+	99	0
+	+	100	0
+	+	101	0
+	+	102	0
+	+	103	0
+	+	104	0
+	+	11	19
+	+	84	94
+	+	82	44
+	+	84	36
+	+	40	44
+	+	38	3
+	+	40	26
+	+	38	3
+	+	40	45
+	+	53	17
+	+	53	0
+	+	50	0
+	+	52	0
+	+	51	20
+	+	52	19
+	+	53	17
+	+	74	21
+	+	54	0
+	+	67	11
+	+	68	11
+	+	69	10
+	+	54	9
+	+	15	0
+	+	16	0
+	+	15	21
+	+	16	30
 
-> ~/proj/client/package.json
-	"	11	0
-
-> /private/var/folders/ph/q5t87ryj3kx5n73x6p8rgzf40000gn/T/vzymBDn/[Vundle] list
-	"	15	0
+> ~/NERD_tree_1
+	"	84	0
 	.	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/[Vundle] Installer
+	"	83	0
+	.	1	0
+	+	2004	0
+	+	1931	0
+	+	1859	0
+	+	1788	0
+	+	1717	0
+	+	1647	0
+	+	1576	0
+	+	1506	0
+	+	1435	0
+	+	1365	0
+	+	1294	0
+	+	1222	0
+	+	1150	0
+	+	1078	0
+	+	1006	0
+	+	934	0
+	+	861	0
+	+	787	0
+	+	713	0
+	+	639	0
+	+	564	0
+	+	487	0
+	+	408	0
+	+	328	0
+	+	247	0
+	+	165	0
+	+	83	0
+	+	1	0
+
+> ~/code/test.cpp
+	"	1	18
+	^	14	34
+	.	14	33
+	+	1	19
+	+	20	0
+	+	22	39
+	+	1	18
+	+	2	19
+	+	3	0
+	+	6	0
+	+	6	0
+	+	8	31
+	+	6	0
+	+	9	0
+	+	10	28
+	+	11	0
+	+	14	0
+	+	11	11
+	+	12	30
+	+	14	33
+
+> ~/code/string.c
+	"	1	0
+
+> ~/code/money.c
+	"	1	13
+
+> ~/tes.cpp
+	"	7	0
+	^	7	1
+	.	7	1
+	+	1	19
+	+	3	0
+	+	5	20
+	+	7	1
+
+> ~/he.cpp
+	"	5	20
+	^	5	21
+	.	5	20
+	+	1	19
+	+	3	0
+	+	5	20
+
+> ~/test.cpp
+	"	7	1
+	^	5	22
+	.	5	21
+	+	1	19
+	+	3	0
+	+	5	21
+
+> ~/.vimrc.bundles.local
+	"	17	41
+	^	17	42
+	.	17	41
+	+	1	0
+	+	20	0
+	+	19	10
+	+	19	0
+	+	19	9
+	+	19	7
+	+	19	9
+	+	1	0
+	+	19	0
+	+	19	0
+	+	19	0
+	+	1	0
+	+	19	0
+	+	19	8
+	+	19	9
+	+	19	1
+	+	19	0
+	+	19	0
+	+	19	0
+	+	6	21
+	+	18	7
+	+	19	0
+	+	19	0
+	+	7	0
+	+	8	28
+	+	18	0
+	+	18	0
+	+	18	0
+	+	8	28
+	+	9	40
+	+	10	32
+	+	11	23
+	+	12	35
+	+	13	45
+	+	18	0
+	+	15	18
+	+	16	30
+	+	18	0
+	+	17	41
+
+> ~/.vimrc
+	"	1	0
+
+> ~/[Vundle] list
+	"	2	0
+	.	1	0
+	+	386	0
+	+	312	0
+	+	236	0
+	+	159	0
+	+	81	0
+	+	1	0
+
+> ~/.zsrhc
+	"	1	0
+
+> ~/.vim/init.vim
+	"	51	0
+
+> ~/.vim/.ycm_extra_conf.py
+	"	1	9
+	^	65	20
+	.	65	19
+	+	67	105
+	+	69	115
+	+	71	90
+	+	63	26
+	+	65	19
+
+> ~/test.html
+	"	1	0
+	^	11	4
+	.	11	4
+	+	1	0
+	+	150	0
+	+	144	15
+	+	145	0
+	+	150	0
+	+	150	0
+	+	146	0
+	+	150	0
+	+	147	0
+	+	148	0
+	+	147	29
+	+	148	0
+	+	149	0
+	+	1	0
+	+	1	427
+	+	1	122
+	+	1	167
+	+	1	206
+	+	1	258
+	+	1	427
+	+	1	427
+	+	1	427
+	+	1	665
+	+	1	436
+	+	1	166
+	+	1	433
+	+	1	427
+	+	1	285
+	+	1	288
+	+	1	306
+	+	1	427
+	+	1	399
+	+	1	419
+	+	1	416
+	+	1	339
+	+	117	0
+	+	131	0
+	+	1	0
+	+	114	0
+	+	110	21
+	+	111	0
+	+	114	0
+	+	114	256
+	+	1	0
+	+	104	0
+	+	94	21
+	+	95	0
+	+	104	0
+	+	97	18
+	+	100	8
+	+	103	0
+	+	98	0
+	+	102	0
+	+	99	0
+	+	100	19
+	+	1	0
+	+	82	14
+	+	83	6
+	+	84	4
+	+	85	0
+	+	85	0
+	+	86	0
+	+	83	16
+	+	1	0
+	+	66	0
+	+	62	21
+	+	66	0
+	+	67	0
+	+	67	0
+	+	68	32
+	+	1	0
+	+	55	0
+	+	1	0
+	+	44	0
+	+	33	21
+	+	34	0
+	+	35	12
+	+	36	8
+	+	39	0
+	+	40	9
+	+	1	0
+	+	1	0
+	+	23	18
+	+	24	4
+	+	26	0
+	+	26	0
+	+	26	0
+	+	1	0
+	+	13	0
+	+	6	21
+	+	13	0
+	+	10	14
+	+	11	4
+
+> ~/code/thinkcpp/test.c
+	"	4	6
+	^	3	1
+	.	4	0
+	+	1	18
+	+	7	0
+	+	9	2
+	+	1	18
+	+	2	0
+	+	3	9
+	+	4	0
+
+> ~/code/thinkcpp/ctype.cpp
+	"	14	0
+	^	14	0
+	.	14	0
+	+	1	19
+	+	2	18
+	+	3	0
+	+	6	0
+	+	6	0
+	+	6	0
+	+	8	21
+	+	9	0
+	+	10	0
+	+	10	57
+	+	8	17
+	+	10	49
+	+	14	0
+	+	14	0
+	+	14	0
+
+> ~/code/thinkcpp/countLetters.cpp
+	"	23	13
+	^	27	14
+	.	27	13
+	+	1	0
+	+	3	0
+	+	1	34
+	+	5	0
+	+	10	0
+	+	9	11
+	+	4	15
+	+	9	0
+	+	6	0
+	+	7	0
+	+	7	13
+	+	11	19
+	+	14	0
+	+	16	28
+	+	18	39
+	+	19	21
+	+	25	0
+	+	28	0
+	+	26	29
+	+	27	13
+
+> ~/code/thinkcpp/traverse.cpp
+	"	38	11
+	^	57	12
+	.	57	11
+	+	1	19
+	+	2	0
+	+	5	0
+	+	5	0
+	+	7	28
+	+	10	0
+	+	14	0
+	+	13	21
+	+	12	22
+	+	18	0
+	+	27	0
+	+	18	20
+	+	27	0
+	+	27	0
+	+	27	0
+	+	20	25
+	+	21	0
+	+	25	0
+	+	24	21
+	+	25	0
+	+	23	22
+	+	26	10
+	+	29	0
+	+	31	0
+	+	29	33
+	+	32	0
+	+	37	0
+	+	33	0
+	+	34	0
+	+	34	18
+	+	37	0
+	+	36	21
+	+	38	11
+	+	31	10
+	+	36	5
+	+	41	0
+	+	46	0
+	+	41	14
+	+	46	0
+	+	46	30
+	+	46	2
+	+	46	11
+	+	44	7
+	+	46	6
+	+	46	0
+	+	51	0
+	+	53	0
+	+	53	8
+	+	48	0
+	+	49	0
+	+	48	23
+	+	45	8
+	+	49	14
+	+	45	12
+	+	51	15
+	+	53	13
+	+	54	0
+	+	52	15
+	+	57	11
+
+> ~/code/thinkcpp/distance.cpp
+	"	3	11
+	^	10	17
+	.	10	12
+	+	1	19
+	+	8	0
+	+	8	0
+	+	10	45
+	+	3	0
+	+	5	0
+	+	3	57
+	+	5	12
+	+	10	12
+
+> ~/code/thinkcpp/areaOfRadius.cpp
+	"	2	15
+	^	2	16
+	.	2	15
+	+	1	19
+	+	9	0
+	+	11	11
+	+	3	0
+	+	5	0
+	+	3	24
+	+	7	13
+	+	5	22
+	+	6	16
+	+	2	15
+
+> ~/code/thinkcpp/angle.cpp
+	"	8	1
+	^	9	29
+	.	9	29
+	+	1	19
+	+	2	15
+	+	4	0
+	+	6	23
+	+	7	19
+	+	8	47
+	+	9	29
+	+	8	48
+	+	9	29
+
+> ~/code/thinkcpp/typeofvalue.cpp
+	"	12	0
+	.	13	0
+	+	1	19
+	+	3	0
+	+	6	0
+	+	6	0
+	+	8	42
+	+	9	31
+	+	10	16
+	+	13	9
+	+	13	0
+
+> ~/code/thinkcpp/moreOutput.cpp
+	"	1	19
+	^	9	37
+	.	9	36
+	+	1	19
+	+	5	0
+	+	7	42
+	+	8	27
+	+	2	0
+	+	2	0
+	+	2	0
+	+	5	0
+	+	3	25
+	+	5	0
+	+	9	36
+	+	10	20
+	+	9	36
+
+> ~/code/thinkcpp/helloWorld.cc
+	"	6	2
+	.	6	0
+	+	1	19
+	+	4	0
+	+	6	28
+	+	4	0
+	+	5	29
+	+	5	27
+	+	6	0
+
+> ~/code/thinkcpp/helloWorld.js
+	"	1	2
+	.	32	0
+	+	161	0
+	+	161	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	31	0
+	+	32	0
+
+> ~/code/thinkcpp/helloWorld.c
+	"	1	0
 
 > ~/code/Person.java
 	"	7	19
-	^	15	20
-	.	15	19
+
+> ~/test.c
+	"	13	1
+	^	10	23
+	.	10	22
+	+	1	18
+	+	69	0
+	+	71	22
+	+	1	0
+	+	66	30
+	+	1	0
+	+	62	30
+	+	1	18
+	+	54	0
+	+	54	0
+	+	56	23
+	+	57	10
+	+	50	0
+	+	52	0
+	+	52	40
+	+	60	7
+	+	1	18
+	+	50	0
+	+	50	23
+	+	50	0
+	+	40	0
+	+	42	0
+	+	43	0
+	+	43	39
+	+	45	18
+	+	36	0
+	+	38	0
+	+	38	30
+	+	46	28
+	+	1	18
+	+	1	0
+	+	1	18
+	+	1	0
+	+	35	0
+	+	1	8
+	+	1	18
+	+	1	0
+	+	1	17
+	+	1	0
+	+	1	19
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	8
+	+	1	7
+	+	1	7
+	+	1	7
+	+	1	7
+	+	1	0
+	+	1	0
+	+	1	18
+	+	25	0
+	+	25	0
+	+	27	16
+	+	28	0
+	+	29	0
+	+	29	26
+	+	1	18
+	+	14	0
+	+	16	0
+	+	21	0
+	+	17	0
+	+	18	15
+	+	21	14
+	+	16	0
+	+	1	18
 	+	2	0
-	+	2	0
-	+	3	25
-	+	4	27
-	+	6	28
-	+	7	20
-	+	11	0
-	+	11	25
-	+	12	24
-	+	13	0
-	+	13	0
-	+	14	23
-	+	15	19
+	+	4	14
+	+	12	0
+	+	12	0
+	+	12	0
+	+	6	0
+	+	7	0
+	+	7	42
+	+	9	43
+	+	4	19
+	+	10	22
 
 > ~/code/Cashier.java
-	"	9	9
-	^	8	59
-	.	8	58
-	+	1	23
-	+	2	0
-	+	2	0
-	+	3	48
-	+	5	0
-	+	5	18
-	+	6	75
-	+	7	0
-	+	7	0
-	+	8	45
-	+	8	58
+	"	5	15
 
-> ~/code/thief.java
-	"	7	1
-	^	5	8
-	.	5	7
+> ~/code/trans.scss
+	"	87	0
+	.	1	0
+	+	1	1442
+	+	1	1439
+	+	1	1444
+	+	1	1509
+	+	1	1509
+	+	1	1526
+	+	1	1544
+	+	1	1532
+	+	1	1665
+	+	1	1860
+	+	1	1860
+	+	1	1860
+	+	1	1888
+	+	1	1860
+	+	1	1814
+	+	1	1814
+	+	1	1834
+	+	1	1837
+	+	1	1814
+	+	1	1814
+	+	1	1814
+	+	1	1814
+	+	1	1830
+	+	1	1842
+	+	1	1857
+	+	1	788
+	+	1	788
+	+	1	788
+	+	1	788
+	+	1	805
+	+	1	844
+	+	1	788
+	+	1	839
+	+	1	837
+	+	1	839
+	+	1	927
+	+	1	927
+	+	1	925
+	+	1	927
+	+	1	1017
+	+	1	1015
+	+	1	1113
+	+	1	1108
+	+	1	1199
+	+	1	1197
+	+	1	1319
+	+	1	1319
+	+	1	1316
+	+	1	1319
+	+	1	1413
+	+	1	1416
+	+	1	1509
+	+	1	1506
+	+	1	1509
+	+	1	1814
+	+	1	1814
+	+	1	1814
+	+	1	1537
+	+	1	1663
+	+	1	1577
+	+	1	1663
+	+	1	1553
+	+	1	1582
+	+	1	1607
+	+	1	1607
+	+	1	1639
+	+	1	1748
+	+	1	1623
+	+	1	1565
+	+	1	1814
+	+	1	1661
+	+	1	1767
+	+	1	1729
+	+	1	1811
+	+	1	1814
+	+	1	453
+	+	1	453
+	+	1	1814
+	+	1	413
+	+	1	788
 	+	1	0
 	+	1	0
-	+	2	36
-	+	3	75
-	+	4	25
-	+	7	0
-	+	5	7
+	+	1	1801
+	+	1	1916
+	+	1	1916
+	+	1	1916
+	+	1	1916
+	+	1	1916
+	+	1	1916
+	+	1	1916
+	+	1	1862
+	+	1	1914
+	+	1	1914
+	+	1	1911
+	+	88	0
+	+	1	1970
+	+	1	1970
+	+	1	1970
+	+	1	1113
+	+	1	0
 
-> ~/.vim/UltiSnips/java.snippets
-	"	5	10
-	^	14	30
-	.	14	29
+> ~/code/trans.css
+	"	32	0
+
+> ~/Downloads/Project Template 1/js/plugins.js
+	"	149	10
+	.	2	0
+	+	1	58
+	+	2	0
+
+> ~/Downloads/Project Template 1/js/main.js
+	"	1	0
+
+> ~/powerline/docs/Makefile
+	"	1	2
+
+> ~/powerline/font/10-powerline-symbols.conf
+	"	73	1
+
+> ~/code/[Vundle] list
+	"	6	0
+	.	1	0
 	+	1	0
-	+	3	0
-	+	1	23
-	+	2	35
-	+	4	0
+
+> ~/consolas-powerline-vim/README.md
+	"	11	0
+
+> ~/他人项目学习/CodeJS/Node/node-web-dev/app-connect.js
+	"	3	0
+	.	2	0
+	+	2	0
+
+> ~/他人项目学习/CodeJS/Node/node-web-dev/app-connect.jsls
+	"	1	0
+
+> ~/他人项目学习/CodeJS/Node/node-web-dev/home-node.js
+	"	10	0
+	^	10	2
+	.	10	1
+	+	2	0
+	+	10	1
+
+> ~/他人项目学习/CodeJS/Node/node-web-dev/app-node.js
+	"	28	10
+	.	2	0
+	+	2	0
+
+> ~/NERD_tree_2
+	"	90	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/[Vundle] clean
+	"	3	0
+	.	1	0
+	+	22	0
+	+	20	0
+	+	18	0
+	+	13	0
+	+	12	0
+	+	10	0
 	+	8	0
-	+	4	23
-	+	6	28
-	+	1	10
+	+	7	0
+	+	5	0
+	+	3	0
+	+	1	0
+
+> ~/test.js
+	"	8	12
+	^	2	13
+	.	2	12
+	+	7	0
+	+	8	0
+	+	7	23
+	+	8	25
+	+	2	12
+
+> ~/code/test/index.js
+	"	8	43
+	^	9	39
+	.	9	38
+	+	3	42
+	+	4	0
+	+	10	26
+	+	5	6
+	+	3	18
+	+	5	14
+	+	8	42
+	+	10	32
+	+	5	15
+	+	9	38
+
+> ~/code/test/NERD_tree_2
+	"	10	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/test/requestHandlers.js
+	"	65	0
+	.	66	0
+	+	1	477
+	+	1	42
+	+	1	421
+	+	1	421
+	+	1	312
+	+	1	285
+	+	1	418
+	+	1	408
+	+	1	397
+	+	1	386
+	+	1	341
+	+	1	286
+	+	1	246
+	+	1	286
+	+	1	242
+	+	1	235
+	+	1	224
+	+	1	222
+	+	1	150
+	+	1	140
+	+	1	42
+	+	1	117
+	+	1	485
+	+	1	523
+	+	1	505
+	+	1	84
+	+	1	267
+	+	1	116
+	+	1	769
+	+	1	613
+	+	1	82
+	+	1	801
+	+	1	42
+	+	1	791
+	+	1	849
+	+	1	849
+	+	1	849
+	+	1	849
+	+	1	885
+	+	1	881
+	+	1	932
+	+	1	943
+	+	1	41
+	+	1	42
+	+	1	1128
+	+	1	994
+	+	1	994
+	+	1	994
+	+	1	1119
+	+	1	1112
+	+	1	1093
+	+	1	42
+	+	1	1229
+	+	1	42
+	+	1	1241
+	+	1	1304
+	+	1	484
+	+	1	378
+	+	1	395
+	+	1	389
+	+	1	392
+	+	1	429
+	+	1	429
+	+	1	473
+	+	1	394
+	+	1	431
+	+	1	433
+	+	1	484
+	+	1	482
+	+	1	476
+	+	1	482
+	+	1	42
+	+	1	143
+	+	1	171
+	+	1	674
+	+	1	1094
+	+	1	1098
+	+	1	1094
+	+	1	796
+	+	1	800
+	+	1	862
+	+	1	888
+	+	1	942
+	+	1	1096
+	+	1	1077
+	+	1	1092
+	+	1	42
+	+	1	1569
+	+	1	1619
+	+	1	1578
+	+	1	1621
+	+	1	1619
+	+	1	1614
+	+	1	1614
+	+	1	1569
+	+	1	1590
+	+	1	1589
+	+	1	1577
+	+	2	0
+	+	66	0
+
+> ~/code/test/server.js
+	"	8	48
+	^	8	49
+	.	8	48
+	+	1	81
+	+	1	227
+	+	1	303
+	+	1	248
+	+	1	28
+	+	1	226
+	+	1	28
+	+	1	219
+	+	1	323
+	+	1	219
+	+	1	346
+	+	1	424
+	+	1	28
+	+	15	0
+	+	15	7
+	+	15	60
+	+	15	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	1	28
+	+	1	291
+	+	1	238
+	+	1	287
+	+	1	287
+	+	1	246
+	+	1	191
+	+	1	287
+	+	1	28
+	+	1	221
+	+	1	28
+	+	1	361
+	+	1	28
+	+	1	369
+	+	1	453
+	+	1	457
+	+	1	508
+	+	2	0
+	+	9	0
+	+	7	0
+	+	6	0
+	+	1	38
+	+	3	0
+	+	3	0
+	+	1	0
+	+	6	0
 	+	8	0
 	+	9	0
-	+	12	0
-	+	9	22
-	+	10	8
-	+	11	2
+	+	8	48
+
+> ~/code/test/router.js
+	"	1	50
+	^	1	50
+	.	1	49
+	+	1	30
+	+	1	88
+	+	1	88
+	+	1	88
+	+	1	162
+	+	1	153
+	+	1	217
+	+	1	31
+	+	1	141
+	+	1	250
+	+	1	41
+	+	1	40
+	+	1	176
+	+	1	348
+	+	1	334
+	+	1	351
+	+	1	50
+	+	1	42
+	+	1	154
+	+	1	0
+	+	1	187
+	+	1	146
+	+	1	181
+	+	1	53
+	+	2	0
+	+	1	0
+	+	4	46
+	+	1	54
+	+	4	44
+	+	1	52
+	+	4	41
+	+	1	49
+
+> ~/code/test/NERD_tree_4
+	"	10	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/test/tmp.js
+	"	8	0
+
+> ~/code/test/NERD_tree_1
+	"	11	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/test/NERD_tree_6
+	"	10	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/test/__Tagbar__
+	"	10	2
+	.	13	0
 	+	13	0
-	+	15	0
-	+	13	19
-	+	14	29
 
-> ~/code/com/lison/demo/IAnimal.java
-	"	2	6
-	^	2	7
-	.	2	6
-	+	2	0
-	+	2	18
-	+	3	20
-	+	4	22
-	+	5	24
-	+	6	23
-	+	2	6
+> ~/code/test/undotree_2
+	"	3	1
+	.	3	0
+	+	3	0
+	+	3	0
 
-> ~/code/com/lison/demo/Pig.java
-	"	6	5
-	^	2	35
-	.	2	34
-	+	2	0
-	+	2	0
-	+	3	22
-	+	4	45
-	+	6	22
-	+	7	57
-	+	9	24
-	+	10	55
-	+	12	24
-	+	13	44
-	+	2	34
-
-> ~/code/com/lison/demo/Person2.java
+> ~/code/test/diffpanel_3
 	"	1	0
-	.	16	0
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/.vim/bundle/vim-multiple-cursors/README.md
+	"	81	0
+
+> ~/code/test/fs.js
+	"	24	0
+	.	25	0
+	+	1	27
+	+	2	35
+	+	25	23
+	+	25	27
+	+	25	27
+	+	25	63
+	+	25	27
+	+	25	27
+	+	25	87
+	+	25	29
+	+	25	41
+	+	25	0
+	+	28	5
+	+	3	28
+	+	4	0
+	+	4	0
+	+	4	0
+	+	5	0
+	+	5	0
+	+	6	0
+	+	5	60
+	+	24	14
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	41
+	+	8	0
+	+	9	0
+	+	11	55
+	+	12	6
+	+	13	10
+	+	17	10
+	+	18	67
+	+	18	73
+	+	21	54
+	+	18	70
+	+	19	0
+	+	19	38
+	+	19	45
+	+	20	0
+	+	20	39
+	+	20	0
+	+	20	43
+	+	21	50
+	+	20	43
+	+	21	50
+	+	21	0
+	+	21	0
+	+	22	4
+	+	23	3
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+
+> ~/.vim/UltiSnips/javascript.snippets
+	"	18	22
+	^	18	26
+	.	18	22
+	+	7	0
+	+	7	0
+	+	7	23
+	+	7	294
+	+	7	0
+	+	16	0
+	+	7	30
+	+	16	0
+	+	16	0
+	+	8	0
+	+	8	294
+	+	8	10
+	+	9	9
+	+	8	9
+	+	10	53
+	+	10	53
+	+	16	0
+	+	10	72
+	+	11	10
+	+	12	9
+	+	14	40
+	+	14	56
+	+	14	46
+	+	14	10
+	+	14	10
+	+	14	0
+	+	13	17
+	+	17	0
+	+	19	0
+	+	17	23
+	+	18	22
+
+> ~/code/test/NERD_tree_3
+	"	6	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/test/NERD_tree_5
+	"	17	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/test/code/test/index.js
+	"	1	0
+
+> ~/code/test/NERD_tree_9
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/code/test/server.ks
+	"	1	0
+
+> ~/code/test/node_modules/formidable/package.json
+	"	1	0
+
+> ~/code/test/code/test/server.js
+	"	1	0
+
+> ~/.tern-project
+	"	9	0
+	^	9	31
+	.	18	0
+	+	18	0
+	+	18	0
+	+	9	30
+	+	18	0
+
+> ~/.vim/bundle/tern_for_vim/node_modules/tern/.tern-project
+	"	1	0
+
+> ~/code/test/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/code/server.js
+	"	19	0
+	.	20	0
+	+	1	27
+	+	1	0
+	+	1	45
+	+	1	19
+	+	1	43
+	+	1	56
+	+	1	30
+	+	1	16
+	+	1	19
+	+	1	10
 	+	1	23
+	+	1	28
+	+	1	28
+	+	1	63
+	+	1	28
+	+	1	28
+	+	1	27
+	+	1	28
+	+	20	52
+	+	20	0
+	+	20	18
+	+	20	15
+	+	20	32
+	+	1	28
+	+	1	269
+	+	1	43
+	+	20	0
+	+	1	46
+	+	1	269
+	+	1	267
+	+	1	291
+	+	1	28
+	+	1	277
+	+	1	55
+	+	1	352
+	+	1	348
+	+	1	53
+	+	1	154
+	+	1	160
+	+	1	28
+	+	1	208
+	+	1	395
+	+	1	28
+	+	1	73
+	+	1	292
+	+	1	28
+	+	1	201
+	+	1	425
+	+	1	443
+	+	1	440
+	+	1	491
 	+	2	0
+	+	19	0
+	+	19	0
+	+	19	16
+	+	19	49
+	+	20	23
+	+	19	0
+	+	19	0
+	+	20	0
+
+> ~/code/index.js
+	"	3	0
+	.	4	0
+	+	2	32
+	+	3	24
+	+	4	0
+
+> ~/code/router.js
+	"	4	21
+	^	4	22
+	.	4	21
+	+	1	0
+	+	1	26
+	+	1	22
+	+	1	26
 	+	2	0
-	+	3	22
-	+	6	20
-	+	4	50
-	+	7	59
-	+	9	24
-	+	10	58
-	+	13	24
-	+	14	53
-	+	2	39
-	+	16	0
-	+	16	0
-	+	16	3
-	+	16	0
-	+	16	0
+	+	4	21
+
+> ~/code/start.js
+	"	2	14
+	^	2	15
+	.	2	14
+	+	1	32
+	+	2	14
+
+> ~/code/helloworld.js
+	"	1	26
+	^	1	27
+	.	1	26
+	+	1	26
+
+> ~/.vim/UltiSnips/scss.snippets
+	"	191	0
+	^	190	3
+	.	191	0
+	+	123	0
+	+	115	28
+	+	116	60
+	+	118	32
+	+	121	20
+	+	117	1
+	+	120	0
+	+	115	17
+	+	116	45
+	+	124	0
+	+	135	0
+	+	124	38
+	+	125	58
+	+	127	81
+	+	128	27
+	+	130	14
+	+	133	38
+	+	136	0
+	+	139	0
+	+	136	23
+	+	138	44
+	+	136	46
+	+	140	0
+	+	144	0
+	+	140	22
+	+	141	66
+	+	142	0
+	+	143	0
+	+	141	7
+	+	142	4
+	+	141	44
+	+	142	41
+	+	143	36
+	+	145	0
+	+	148	0
+	+	145	18
+	+	146	35
+	+	147	14
+	+	146	37
+	+	147	18
+	+	149	0
+	+	152	0
+	+	149	38
+	+	150	53
+	+	151	28
+	+	153	0
+	+	158	0
+	+	153	24
+	+	156	84
+	+	157	25
+	+	158	0
+	+	159	0
+	+	166	0
+	+	159	13
+	+	163	3
+	+	160	28
+	+	161	21
+	+	162	24
+	+	163	20
+	+	164	17
+	+	193	0
+	+	165	2
+	+	193	0
+	+	167	0
+	+	169	0
+	+	167	23
+	+	168	60
+	+	170	0
+	+	178	0
+	+	170	42
+	+	178	0
+	+	178	0
+	+	171	0
+	+	171	0
+	+	177	4
+	+	179	0
+	+	185	0
+	+	179	30
+	+	180	126
+	+	181	0
+	+	182	0
+	+	183	0
+	+	184	0
+	+	181	3
+	+	182	1
+	+	183	2
+	+	184	0
+	+	193	0
+	+	179	19
+	+	186	0
+	+	192	0
+	+	186	33
+	+	187	82
+	+	188	0
+	+	189	0
+	+	190	0
+	+	188	3
+	+	189	1
+	+	190	3
+	+	191	0
+
+> ~/code/trans.html
+	"	38	10
+	^	40	222
+	.	40	221
+	+	1	15
+	+	45	0
+	+	45	6
+	+	45	0
+	+	45	0
+	+	1	22
+	+	1	23
+	+	1	29
+	+	1	28
+	+	1	318
+	+	1	880
+	+	1	888
+	+	1	28
+	+	1	304
+	+	1	52
+	+	1	51
+	+	1	304
+	+	1	93
+	+	1	134
+	+	1	304
+	+	1	304
+	+	1	91
+	+	1	132
+	+	1	142
+	+	1	238
+	+	1	240
+	+	1	184
+	+	1	304
+	+	1	880
+	+	1	424
+	+	1	317
+	+	1	880
+	+	1	426
+	+	1	317
+	+	1	317
+	+	1	317
+	+	1	439
+	+	1	467
+	+	1	645
+	+	1	484
+	+	1	880
+	+	1	319
+	+	1	15
+	+	1	15
+	+	1	15
+	+	1	15
+	+	1	15
+	+	2	0
+	+	12	41
+	+	11	47
+	+	24	42
+	+	25	45
+	+	26	46
+	+	27	49
+	+	28	44
+	+	29	44
+	+	30	46
+	+	31	49
+	+	32	47
+	+	24	45
+	+	25	0
+	+	26	47
+	+	26	47
+	+	26	49
+	+	27	52
+	+	28	47
+	+	29	47
+	+	30	49
+	+	31	52
+	+	32	50
+	+	34	29
+	+	35	20
+	+	36	0
+	+	37	27
+	+	38	0
+	+	38	220
+	+	39	0
+	+	39	226
+	+	40	0
+	+	40	221

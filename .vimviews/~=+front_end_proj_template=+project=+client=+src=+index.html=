@@ -132,14 +132,18 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
-3
+5
+normal! zo
+10
+normal! zo
+29
 normal! zo
 let s:l = 12 - ((11 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 12
-normal! 08|
+normal! 023|
 lcd ~/front_end_proj_template/project/client/src
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

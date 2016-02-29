@@ -1,16 +1,15 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   Scheme                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" scheme: ir_black, molokai, peaksea, solarized
-colorscheme solarized
+" scheme: molokai,solarized
 syntax enable
+set t_Co=256
 set background=dark
+colorscheme molokai
+let g:enable_bold_font = 1
 let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-let g:solarized_contrast="normal"
-let g:solarized_visibility="normal"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"                                 Systastic                                  "
+"                                 Syntastic                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_java_javac_custom_classpath_command =
     \ "ant -q path | grep echo | cut -f2- -d] | tr -d ' ' | tr ':' '\n'"
@@ -20,6 +19,10 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_c_checkers = ['gcc']
 let g:syntastic_c_compiler = 'gcc'
 let g:syntastic_c_compiler_options = ' -std=c99'
+let g:syntastic_enable_signs=1
+let g:syntastic_error_symbol = '>>'
+let g:syntastic_enable_highlighting = 0
+let g:syntastic_warning_symbol = '>'
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 function! ToggleErrors()
@@ -47,6 +50,8 @@ nmap b :TagbarToggle<CR>
 set mouse=a "nv
 set mousehide
 let g:NERDTreeWinSize=30
+let NERDChristmasTree=1
+let NERDTreeCaseSensitiveSort=1
 map t :NERDTree<cr>
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowBookmarks=1
@@ -56,6 +61,8 @@ let NERDTreeMouseMode=2
 let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let NERDTreeShowBookmarks=1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                               YouCompleteme                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -95,6 +102,12 @@ set foldenable
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                               indent                                "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>l :IndentLinesToggle<CR>
+let g:indentLine_color_gui = '#A4E57E'
+" let g:indentLine_char = '┆'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 SimpylFold                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -109,9 +122,9 @@ autocmd FileType javascript setlocal omnifunc=tern#Complete
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             VimCoplete & Spell                             "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set dictionary+=/usr/share/dict/words
+" set dictionary+=/usr/share/dict/words
 map ,ss :setlocal spell!<cr>
-set complete-=k complete+=k
+" set complete-=k complete+=k
 set dictionary+=~/data/github/dotfiles/vim/dictionary/javascript.dict
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                      VimMultifiles & buffer & window                       "
@@ -157,15 +170,15 @@ set tags+=/usr/local/include/boost
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                indentGuides                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_start_level=2
-let g:indent_guides_guide_size=1
-let g:indent_guides_auto_colors=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+" let g:indent_guides_enable_on_vim_startup=1
+" let g:indent_guides_start_level=2
+" let g:indent_guides_guide_size=1
+" let g:indent_guides_auto_colors=0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#212121 ctermbg=233
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#404040 ctermbg=234
-:nmap <silent> <F4> <Plug>IndentGuidesToggle
+" :nmap <silent> <F4> <Plug>IndentGuidesToggle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                vim-markdown                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -190,10 +203,14 @@ let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                jsDoc                                "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> <C-l> <Plug>(jsdoc)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 Normalset                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" set guifont=Monaco\ for\ Powerline:h17
+set guifont=Consoloas\ for\ Powerline:h16
 set nonu
 set gdefault
 :set pastetoggle=<F2>
@@ -202,16 +219,13 @@ nmap le 0
 set nowrap        " 禁止折行
 set smartindent   " 智能对齐
 set autoindent    " 自动对齐
-set tabstop=4     " Tab键的宽度
-set shiftwidth=4  " 统一缩进为4
-set softtabstop=4
-set expandtab     " 拓展為空格
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd Filetype scss setlocal ts=2 sw=2 expandtab
-autocmd Filetype css setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
-autocmd Filetype c setlocal ts=4 sw=4 sts=0 noexpandtab
+:set tabstop=2     " Tab键的宽度
+:set shiftwidth=2  " 统一缩进为4
+:set softtabstop=2
+:set expandtab     " 拓展為空格
+:%retab!
 set smarttab
+set fo+=mB
 set shiftround    " 缩进时取整
 set completeopt=longest,menu
 set nobackup
@@ -266,3 +280,4 @@ set number
 " endfunction
 " inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 " inoremap <S-Tab> <c-n>
+set gcr=a:block-blinkon0
